@@ -1,0 +1,245 @@
+@media (max-width: 1740px) {
+  .hero{ 
+    .line-bg{
+      left: 20px;
+    }
+    .square-bg{
+      right: 20px;
+    }
+  }
+  .about{ 
+    .line-bg{
+      right: 20px;
+    }
+    .square-bg{
+      left: 20px;
+    }
+  }
+} 
+
+@media (max-width: 1500px) {
+  .hero .line-bg{
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hero .square-bg{
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero{
+    padding: 16px 0 30px;
+    .container{
+      display: block;
+      padding: 0 20px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 19px;
+    }
+    .btn{
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+  }
+  .hero-col{
+    max-width: none;
+    padding: 0;
+  }
+  .logo-box{
+    margin: 0 0 17px;
+  }
+  .logo{
+    font-size: 42px;
+    line-height: 54px;
+  }
+  .slogan{
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 18px;
+  }
+  .compatible{
+    margin-bottom: 30px;
+    p{
+      margin-bottom: 0;
+    }
+  }
+  .btn{
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px;
+  }
+  .video{
+    margin-top: 0;
+    max-width: 500px;
+  }
+  .about{
+    padding: 23px 0 0;
+    .line-bg,
+    .square-bg{
+      display: none;
+    }
+  }
+  h1, h2{
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 18px;
+  }
+  h2{
+    margin-bottom: 24px;
+  }
+  .subtitle{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+  .about p{
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .gallery-row-in img{
+    width: 1246px;
+  }
+  .like-line{
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .like-line span:not(:last-child), .like-line img:not(:last-child){
+    margin-right: 14px;
+  }
+  .features{
+    padding: 32px 0 30px;
+    .line-bg,
+    .square-bg{
+      display: none;
+    }
+  }
+  .features-list{
+    margin: 0 -10px;
+    padding-bottom: 10px;
+    li{
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 0 10px;
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 20px;
+      .text{
+        padding-left: 15px;
+      }
+      .ico{
+        width: 80px;
+      }
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+  .how-install{
+    padding: 23px 0 30px;
+    .line-bg,
+    .square-bg{
+      display: none;
+    }
+  }
+  .how-list{
+    margin: 0 -10px;
+    padding-bottom: 0;
+  }
+  .how-col{
+    padding: 0 10px;
+  }
+  .how-card-img{
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 21px;
+  }
+  .how-install .subtitle{
+    margin-bottom: 24px;
+  }
+  .footer{
+    padding: 23px 0;
+    .line-bg,
+    .square-bg{
+      display: none;
+    }
+    .btn{
+      margin-top: 30px;
+    }
+  }
+  .footer-text{
+    padding: 0;
+    font-size: 14px;
+    line-height: 21px;
+    .ico{
+      position: static;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 22px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .features-list{
+    display: block;
+    li{
+      max-width: none;
+    }
+  }
+  .how-list{
+    display: block;
+  }
+  .how-col{
+    max-width: none;
+  }
+}
+
+@media (max-width: 577px) {
+  .hero .btn,
+  .video{
+    max-width: none;
+  }
+  .video a,
+  .how-install .video a{
+    height: 174px;
+  }
+  .compatible{
+    flex-wrap: wrap;
+    p{
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 14px;
+    }
+    img{
+      margin: 0 30px 0 0;
+    }
+  }
+  .about, .features, .how-install{
+    overflow: visible;
+  }
+  .sub{
+    display: block;
+    &.is-pinned{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .logo{
+    font-size: 39px;
+  }
+}
