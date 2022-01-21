@@ -1996,7 +1996,7 @@ svg {
   }
 
   .admin-can picture, .user-can picture {
-    max-width: 335px;
+    max-width: 80%;
     margin: 0px auto;
   }
 
@@ -2023,7 +2023,7 @@ svg {
   }
 
   .user-can.blue picture {
-    max-width: 335px;
+    max-width: 80%;
   }
 
   .video-inner {
@@ -2045,7 +2045,8 @@ svg {
     display: block;
   }
   .how-it-works-inner .col {
-    max-width: 375px;
+    max-width: 60%;
+    margin: auto;
   }
   .how-it-works-inner .title {
     margin-bottom: 24px;
@@ -2087,8 +2088,15 @@ svg {
     max-width: 100%;
   }
 
+  .video-item {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 22px;
+  }
+
   .hero-img {
     max-width: 335px;
+    margin: auto;
     margin-top: 33px;
   }
 }
@@ -2112,6 +2120,14 @@ svg {
   }
   .user-can-inner:before {
     top: 130%;
+  }
+
+  .video-item {
+    width: 80%;
+  }
+
+  .how-it-works-inner .col {
+    max-width: 80%;
   }
 
   .admin-can-inner, .supported-inner, .video-inner, .how-it-works-inner {
