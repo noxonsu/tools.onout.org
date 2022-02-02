@@ -37,11 +37,32 @@
 6. отправить все материалы нам на ревью, далее фокус группе 
 
 # шаг 5 релиз (мы делаем на основе данных, которые вы прислали)
-1. делаем лендос
-2. заливаем в кодканьон
-3. заливаем в амазон
-4. делаем емейл рассылку среди нашей базы 
-5. прочие дела
+1. семантика. в телеге webmasterbot > ahref ищем ключевые слова для оптимизации (how to create dex, how to fork uniswap etc..).
+2. делаем лендос по структуре: шапка, видео, how to earn (for what?), amdin can, user can, описание, faq. кнопки live preview и get started. 
+2.1 так же дизайнер делает превьюшки и иконки для кодканьона (80 на 80, todo: дописать размеры). Пример визуалки https://www.figma.com/file/Tm5zflJdT1vfjCwzP3RPeV/Unifactory-(Copy) 
+3. заливаем видос или несколько onout https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw . В видео указать копирайты 
+```
+https://tools.onout.org/lottery - get started
+
+We are a team of blockchain developers, we build no-code tools for creating DEX, DAO, Wallet, Farming, Lottery and NFT marketplace on your own domain. View catalog https://tools.onout.org/
+
+Ask a question! 
+support@onout.org - e-mail 
+https://support.onout.org/chat/widget/form/3882717100 - Web chat
+https://t.me/onoutsupportbot - Telegram Bot Chat
+https://support.onout.org/hc/1331700057 - Knowledge Base
+
+Join the community! 
+https://discord.gg/VwKEmHEgVN  - Join Discord
+https://dash.onout.org/ - Join mailing list
+https://twitter.com/onout_org - Twitter
+```
+название видео "How to create a DEX without codeing skills on your own domain. Uniswap v2 fork (copy) tutorial". названия меняем. обязательно как можно больше ключей (см семантика п. 1)
+
+4. заливаем в кодканьон
+5. заливаем в амазон
+6. делаем емейл рассылку среди нашей базы 
+7. прочие дела
 
 # сапорт и улучшения (мы совместно с вами)
 1. чат сапорта + чат бот в телегу
