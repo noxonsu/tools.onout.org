@@ -40,7 +40,28 @@
 1. семантика. в телеге webmasterbot > ahref ищем ключевые слова для оптимизации (how to create dex, how to fork uniswap etc..).
 2. делаем лендос по структуре: шапка, видео, how to earn (for what?), amdin can, user can, описание, faq. кнопки live preview и get started. 
 2.1 так же дизайнер делает превьюшки и иконки для кодканьона (80 на 80, todo: дописать размеры). Пример визуалки https://www.figma.com/file/Tm5zflJdT1vfjCwzP3RPeV/Unifactory-(Copy) 
-3. заливаем видос или несколько onout https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw . В видео указать копирайты 
+## 3. заливаем видос или несколько onout https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw . 
+
+План видео. 
+0. открываем вкалдку: лендос, 
+2. (фокус на лендос) hi all. i am onout tools developer. 
+3. let me introduce a tool to create DAO  
+4. произносим что это и какие особенности, выделяя некоторые части лендоса
+5. let's click to "live preview" to check how it will looks like for users
+6. on the main page user can "connect wallet", all EVM networks are supported
+7. далее кликаем по страницам показываем, что там user can 
+8. how to to manage all this stuff as admin i will show after installation
+9. so, let's close the demo and click "get started"
+10. you should login with your wallet and enter the email
+11. select this product in the catalog, you can select WP or HTML version (или какие там будут еще)
+12. pay using your wallet (показываем как происходит оплата)
+13. now you can download zip file (скачиваем файл)
+14. the installation process is depend on the platform you use, please follow the documentation below this video
+15. if you bought static version open index.html and change this settings
+16. показываем, что там за сетинги, bep20 берем с езерскана (напоминаем, что поддерживаются all EVM blockchains such as ethereum, binance smart chain, polygon and other are suported!) 
+17. рассказываем про каждый сеттинг, все их включать не надо 
+
+В видео указать копирайты 
 ```
 https://tools.onout.org/lottery - get started
 
