@@ -1635,10 +1635,10 @@ svg {
   overflow: hidden;
 }
 .code-text span:not(.first) {
-  text-indent: 49px;
+  text-indent: 0;
 }
 .code-text span.eighth {
-  text-indent: 33px;
+  text-indent: 0;
 }
 .code-text .thrid {
   color: #66E7DF;
