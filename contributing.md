@@ -40,9 +40,10 @@
 1. семантика. в телеге webmasterbot > ahref ищем ключевые слова для оптимизации (how to create dex, how to fork uniswap etc..).
 2. делаем лендос по структуре: шапка, видео, how to earn (for what?), amdin can, user can, описание, faq. кнопки live preview и get started. 
 2.1 так же дизайнер делает превьюшки и иконки для кодканьона (80 на 80, todo: дописать размеры). Пример визуалки https://www.figma.com/file/Tm5zflJdT1vfjCwzP3RPeV/Unifactory-(Copy) 
-## 3. заливаем видос или несколько onout https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw . 
+## 📹 3. заливаем видос или несколько onout https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw . 
 
-План видео. 
+ План видео. 
+```
 0. открываем вкалдку: лендос, 
 2. (фокус на лендос) hi all. i am onout tools developer. 
 3. let me introduce a tool to create DAO  
@@ -60,6 +61,7 @@
 15. if you bought static version open index.html and change this settings
 16. показываем, что там за сетинги, bep20 берем с езерскана (напоминаем, что поддерживаются all EVM blockchains such as ethereum, binance smart chain, polygon and other are suported!) 
 17. рассказываем про каждый сеттинг, все их включать не надо 
+```
 
 В видео указать копирайты 
 ```
