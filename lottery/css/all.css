@@ -1894,8 +1894,12 @@ svg {
 
 .hero .btns {
   margin: 0 -20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
+.hero .btns div:last-child{
+  margin-top: 20px;
+}
 .btns {
   display: -webkit-box;
   display: -ms-flexbox;

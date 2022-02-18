@@ -1350,6 +1350,7 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1779,6 +1780,26 @@ svg {
 .list03 li:nth-child(2) svg {
   width: 20px;
   height: 20px;
+}
+
+.btn-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.btn-row > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 48%;
+}
+
+.btn-documentation{
+  max-width: 48%;
+  margin: 0 auto;
 }
 
 .btn-box {
