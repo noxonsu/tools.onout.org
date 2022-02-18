@@ -1688,7 +1688,12 @@ img {
   .hero .row {
     margin-bottom: 40px;
   }
-
+  .hero-btn-box{
+    flex-wrap: wrap;
+  }
+  .hero-btn-box span:last-child{
+    margin-top: 20px;
+  }
   .title {
     font-size: 30px;
     line-height: 40px;
@@ -1809,5 +1814,18 @@ img {
   .sub.is-pinned {
     opacity: 1;
     visibility: visible;
+  }
+}
+@media (max-width: 400px) {
+  .hero-btn-box{
+    flex-direction: column; 
+  }
+  .hero-btn-box span{
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+  .hero-btn-box span:last-child{
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }

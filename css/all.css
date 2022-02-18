@@ -1445,6 +1445,7 @@ img {
   padding: 0 40px;
 }
 
+
 .logo {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 114px;
@@ -1467,6 +1468,10 @@ img {
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
+.white-btn:first-child{
+  margin-right: 15px;
+}
+
 .white-btn:hover, .white-btn:focus {
   color: #fff;
   background: rgba(255, 255, 255, 0.15);
@@ -2348,6 +2353,19 @@ img {
   .product-card {
     height: auto;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .header{
+    align-items: start;
+  }
+  .header-links{
+    display: flex;
+    flex-direction: column;
+  }
+  .white-btn:first-child{
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 360px) {

@@ -1862,8 +1862,12 @@ h2 {
 .hero .btn-box {
   max-width: none;
   margin: 0 -20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
+.hero .btn-box div:last-child{
+  margin-top: 20px;
+}
 @media (max-width: 1740px) {
   .hero .line-bg {
     left: 20px;
@@ -1904,7 +1908,6 @@ h2 {
   }
   .hero .btn {
     max-width: 500px;
-    margin-bottom: 30px;
   }
 
   .hero-col {
@@ -1933,7 +1936,9 @@ h2 {
   .compatible p {
     margin-bottom: 0;
   }
-
+  .btn-box div:last-child{
+    margin-bottom: 30px;
+  }
   .btn {
     font-size: 14px;
     line-height: 21px;
@@ -1941,8 +1946,8 @@ h2 {
   }
 
   .video {
-    margin-top: 0;
     max-width: 500px;
+    margin: 0 auto;
   }
 
   .about {
@@ -2078,10 +2083,13 @@ h2 {
   }
 
   .hero .btn-box {
-    margin: 0 -10px;
     max-width: 540px;
+    margin: 0 auto;
   }
 
+  .hero .btn-box div:last-child{
+
+  }
   .btn-box {
     display: -webkit-box;
     display: -ms-flexbox;
