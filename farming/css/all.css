@@ -1385,6 +1385,13 @@ img {
 .btn-box .btn {
   display: block;
 }
+.docs-btn{
+  text-decoration: underline;
+}
+.docs-btn:hover{
+  text-decoration: underline;
+}
+.do
 
 .section {
   text-align: center;

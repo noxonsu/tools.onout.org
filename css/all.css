@@ -1455,6 +1455,10 @@ img {
 .logo img {
   max-width: 100%;
 }
+.header-links{
+  display: flex;
+  align-items: center;
+}
 
 .white-btn {
   text-decoration: none;
@@ -1476,6 +1480,16 @@ img {
   color: #fff;
   background: rgba(255, 255, 255, 0.15);
   border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.docs-btn{
+  margin-right: 20px;
+  color: rgb(255 255 255 / 70%);
+  font-size: 18px;
+  font-weight: 500;
+}
+.docs-btn:hover{
+  color: #fff;
 }
 
 .hero-title {
@@ -2362,15 +2376,22 @@ img {
   }
   .header-links{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .white-btn:first-child{
     margin-right: 0;
     margin-bottom: 15px;
   }
+  .docs-btn{
+    margin-right: 0;
+    margin-top: 20px;
+  }
 }
 @media (max-width: 360px) {
   .header .white-btn {
     padding: 10px;
+  }
+  .docs-btn{
+    font-size: 16px;
   }
 }
