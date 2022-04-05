@@ -69,7 +69,7 @@
 ```
 https://tools.onout.org/lottery - get started
 
-We are a team of blockchain developers, we build no-code tools for creating DEX, DAO, Wallet, Farming, Lottery and NFT marketplace on your own domain. View catalog https://tools.onout.org/
+We are a team of blockchain developers, we build no-code tools for creating DEX, DAO, Wallet, Farming, Lottery and NFT marketplace at your own domain. View catalog https://tools.onout.org/
 
 Ask a question! 
 support@onout.org - e-mail 
@@ -82,7 +82,7 @@ https://discord.gg/VwKEmHEgVN  - Join Discord
 https://dash.onout.org/ - Join mailing list
 https://twitter.com/onout_org - Twitter
 ```
-название видео "How to create a DEX without codeing skills on your own domain. Uniswap v2 fork (copy) tutorial". названия меняем. обязательно как можно больше ключей (см семантика п. 1)
+название видео "How to create a DEX without codeing skills at your own domain. Uniswap v2 fork (copy) tutorial". названия меняем. обязательно как можно больше ключей (см семантика п. 1)
 
 4. заливаем в кодканьон
 5. заливаем в амазон
