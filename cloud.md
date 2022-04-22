@@ -1,8 +1,23 @@
 How to configure cloud versions of product: 
 
-Hello, please do these steps: https://tools.onout.org/images/chrome_TA893FIgwGieMrDeALvyksY6xiEsbEY5.png
+Hello, please do these steps. dash.cloudflare.com : 
+![](https://tools.onout.org/images/chrome_TA893FIgwGieMrDeALvyksY6xiEsbEY5.png)
 
-Current hash for .. 
+# Cloudflare DNS settings:
 
-DEFINANCE  QmfCz1u8qdPSrKpnqS8tL6gFeuH6ojzXFwaBoBQXcm7Txt (22.04) <Br><br>
-CROSCCHAIN QmZFsh1JTaggo6cb4T1QUHsQuzEAJGUGrMDt9yfzmGhHy8 ([log](https://github.com/noxonsu/anyswap-crosschain/runs/6115868602?check_suite_focus=true#step:5:19))
+## DEFINANCE  
+
+(change "domain.com" to your domain or subdomain)
+
+| type | name | value |
+| ---- | ---- | ---- |
+| CNAME | domain.com | 	cloudflare-ipfs.com |
+| TXT | domain.com | dnslink=/ipfs/QmfCz1u8qdPSrKpnqS8tL6gFeuH6ojzXFwaBoBQXcm7Txt |
+
+  
+## CROSCCHAIN 
+
+| type | name | value |
+| ---- | ---- | ---- |
+| CNAME | domain.com | 	cloudflare-ipfs.com |
+| TXT | domain.com | dnslink=/ipfs/QmUw2sxD6UE9AGEtWqNFXwLMUqps8NDTgnbuavoWQYQ2Ni |
