@@ -71,7 +71,7 @@ https://github.com/noxonsu/tools.onout.org/blob/main/contributing.md - наш г
 ### 2.2 Как на своем домене зайти в админку, задеплоить контракты, как отобразить интерфейс на домене. 
 Если админка еще не готова, то делаем админку, а этот видос записываем уже когда выходит финальный релиз.
 
-Ссылки на видосы скинуть в дискорд в канал соотсвествующий и опубликовать в твитере. Текст "Hello, we have done 50% of X fork. See videos. From the users side: . From the admin's side: . This product is added to "presale" tab on dash.onout.org . Presale price is 700$. Estimate time to release - 1 month. Cheers!"
+Ссылки на видосы скинуть в дискорд в канал соотсвествующий и опубликовать в твитере. Текст "Hello, we have done 50% of X fork. See videos. From the users side: (link). From the admin's side: (link) . This product is added to "presale" tab on dash.onout.org . Presale price is 700$. Estimate time to release - 1 month. Cheers!"
 
 ---
 ## FAQ
