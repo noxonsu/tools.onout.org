@@ -66,8 +66,8 @@ https://github.com/noxonsu/tools.onout.org/blob/main/contributing.md - наш г
 1. добавить в dash.onout.org в раздел presale . https://github.com/noxonsu/dash.onout.org/blob/main/src/constants/index.ts#L130 (скопировать данные, самое главное id чтоб был различный от других продуктов)
 
 ## 2. записать видос (вы записываете на английском). 
-### 2.1 Первое видео как юзер пользуется этой апкой. 
-Видос залить в канал https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw (логин support@oout.org). 
+### 2.1 Первое видео как юзер пользуется этой апкой. не забыть логотип поменять на наш дефолтный "your logo here"  
+Видос залить в в наш канал https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw (логин support@oout.org). Создать новый плейлист. 
 ### 2.2 Как на своем домене зайти в админку, задеплоить контракты, как отобразить интерфейс на домене. 
 Если админка еще не готова, то делаем админку, а этот видос записываем уже когда выходит финальный релиз.
 
