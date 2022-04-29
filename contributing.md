@@ -65,10 +65,13 @@ https://github.com/noxonsu/tools.onout.org/blob/main/contributing.md - наш г
 # шаг 4 пререлиз
 1. добавить в dash.onout.org в раздел presale . https://github.com/noxonsu/dash.onout.org/blob/main/src/constants/index.ts#L130 (скопировать данные, самое главное id чтоб был различный от других продуктов)
 
-## 2. записать видос (вы записываете на английском). Как на своем домене зайти в админку, задеплоить контракты, как отобразить интерфейс на домене. Второе видео как юзер пользуется этой апкой. 
-Видос залить в канал https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw (логин support@oout.org). Ссылку на видос скинуть в дискорд в канал соотсвествующий и опубликовать в твитере. 
+## 2. записать видос (вы записываете на английском). 
+### 2.1 Первое видео как юзер пользуется этой апкой. 
+Видос залить в канал https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw (логин support@oout.org). 
+### 2.2 Как на своем домене зайти в админку, задеплоить контракты, как отобразить интерфейс на домене. 
+Если админка еще не готова, то делаем админку, а этот видос записываем уже когда выходит финальный релиз.
 
-6. отправить все материалы нам на ревью, далее фокус группе 
+Ссылки на видосы скинуть в дискорд в канал соотсвествующий и опубликовать в твитере. Текст "Hello, we have done 50% of X fork. See videos. From the users side: . From the admin's side: . This product is added to "presale" tab on dash.onout.org . Presale price is 700$. Estimate time to release - 1 month. Cheers!"
 
 ---
 ## FAQ
