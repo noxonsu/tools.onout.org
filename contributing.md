@@ -37,7 +37,7 @@ https://github.com/noxonsu/tools.onout.org/blob/main/contributing.md - наш г
 > Описываются общие моменты с примерами из Uniswap форка https://github.com/noxonsu/unifactory. Предложения по улучшению описанного процесса приветствуются.
 
 ## 0. форкаем исходники оригинала. 
-- [ ] в настройках репо форке включить issue. 
+- [ ] в настройках репо форка включить issue. 
 - [ ] если это фронт, сразу сделать редиректилку https://github.com/noxonsu/unifactory/pull/85/files#diff-c2cc24bc9001b11b6add48a4cd8f893d5d6c6e4d1bd254158bd14ab997f552cdR13
 - [ ] подслючить cf pages для автодеплоя 
 - [ ] удалить название из title
