@@ -115,7 +115,8 @@ https://twitter.com/onout_org - Twitter
 
 Если админка еще не готова, то делаем админку, а этот видос записываем уже когда выходит финальный релиз.
 
-Ссылки на видосы скинуть в дискорд в канал соотсвествующий и опубликовать в твитере. Текст "Hello, we have done 50% of X fork. See videos. From the users side: (link). From the admin's side: (link) . This product is added to "presale" tab on dash.onout.org . Presale price is 700$. Estimate time to release - 1 month. Cheers!"
+Ссылки на видео нужно скинуть в дискорд в соотвествующий канал и опубликовать в твиттере. 
+Текст "Hello, we have done 50% of development progress a {название продукта} fork. Watch videos: the user usage (link) and the admin usage (link) . This product added to "presale" tab on dash.onout.org. Presale price - $700. Estimate time for releasing is around 1 month. Cheers!"
 
 ---
 ## FAQ
