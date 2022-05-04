@@ -1393,15 +1393,16 @@ img {
 }
 .do
 
-.section {
-  text-align: center;
-  padding: 70px 0 0 0;
-  position: relative;
-}
 .section p {
   max-width: 680px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section {
+  text-align: center;
+  padding: 70px 0 0 0;
+  position: relative;
 }
 
 .section-1 {
