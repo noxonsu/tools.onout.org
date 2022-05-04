@@ -67,7 +67,6 @@
 # шаг 4 пререлиз
 1. добавить в dash.onout.org в раздел presale . https://github.com/noxonsu/dash.onout.org/blob/main/src/constants/index.ts#L130 (скопировать данные, самое главное id чтоб был различный от других продуктов)
 2. записать видос (вы записываете на английском). Как на своем домене зайти в админку, задеплоить контракты, как отобразить интерфейс на домене. Второе видео как юзер пользуется этой апкой
-3. добавить автодеплой в ipfs https://github.com/noxonsu/unifactory/blob/main/.github/workflows/publish2pinataIPFS.yml добавить в репо секреты PINATAAPI , PINATASECRET из pinata.cloud 
 
 6. отправить все материалы нам на ревью, далее фокус группе 
 
