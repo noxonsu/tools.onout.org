@@ -21,7 +21,13 @@ Q: How exactly a sponsor will take a profit? <Br>
 A: We add your address directly to the contract that receives payments for products. Part of the amount of each purchase is immediately sends directly to your wallet.
 
 Q: How to start? <Br>
-A: if you know a project to fork, please contact support@onout.org or https://t.me/onoutsupportbot/?start=feature_sponsor. Or see the Idea's section at "presale" tab on dash.onout.org
+A: At first check our "presale" tab on dash.onout.org. If you know which project to fork collect this information:
+
+- example links.
+- is this project is opensource?
+- source code license type. The best license types are MIT or GNU.
+
+Please contact us and send this info to support@onout.org or [Telegram](https://t.me/onoutsupportbot/?start=feature_sponsor)
 
 ## 3. Buying new product on presale
 In case when we have ETA of new product, we're added it to the dash.onnout.org, and you can find it in the "presale" tab. Presale price is always lower than after release.
