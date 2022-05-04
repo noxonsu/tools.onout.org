@@ -38,7 +38,7 @@ https://github.com/noxonsu/tools.onout.org/blob/main/contributing.md - наш г
 
 ## 0. форкаем исходники оригинала. 
 - [ ] в настройках репо форке включить issue. 
-- [ ] если это фронт сразу сделать редиректилку https://github.com/noxonsu/unifactory/pull/85/files#diff-c2cc24bc9001b11b6add48a4cd8f893d5d6c6e4d1bd254158bd14ab997f552cdR13
+- [ ] если это фронт, сразу сделать редиректилку https://github.com/noxonsu/unifactory/pull/85/files#diff-c2cc24bc9001b11b6add48a4cd8f893d5d6c6e4d1bd254158bd14ab997f552cdR13
 - [ ] подслючить cf pages для автодеплоя 
 - [ ] удалить название из title
 
