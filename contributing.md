@@ -103,7 +103,6 @@ We are a team of blockchain developers, we build no-code tools for creating DEX,
 
 Ask a question! 
 support@onout.org - e-mail 
-https://support.onout.org/chat/widget/form/3882717100 - Web chat
 https://t.me/onoutsupportbot - Telegram Bot Chat
 https://support.onout.org/hc/1331700057 - Knowledge Base
 
