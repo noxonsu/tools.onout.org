@@ -112,7 +112,8 @@ https://discord.gg/VwKEmHEgVN  - Join Discord
 https://dash.onout.org/ - Join mailing list
 https://twitter.com/onout_org - Twitter
 ```
-название видео "How to create a DEX without codeing skills at your own domain. Uniswap v2 fork (copy) tutorial". названия меняем. обязательно как можно больше ключей (см семантика п. 1)
+Название видео: "How to create a DEX on your own domain without coding skills. Uniswap v2 fork (copy) tutorial". Названия меняем в соответствии со своим продуктом. 
+Обязательно использовать как можно больше ключевых слов (см семантика п. 1)
 
 Если админка еще не готова, то делаем админку, а этот видос записываем уже когда выходит финальный релиз.
 
