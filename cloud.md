@@ -1,5 +1,23 @@
 How to configure cloud versions of product: 
 
-Hello, please do these steps: https://tools.onout.org/images/chrome_TA893FIgwGieMrDeALvyksY6xiEsbEY5.png
+Hello, please do these steps. dash.cloudflare.com : 
+![](https://tools.onout.org/images/chrome_TA893FIgwGieMrDeALvyksY6xiEsbEY5.png)
 
-Current hash for DEFINANCE is QmfCz1u8qdPSrKpnqS8tL6gFeuH6ojzXFwaBoBQXcm7Txt (22.04)
+# Cloudflare DNS settings:
+
+## DEFINANCE  
+
+(change "domain.com" to your domain or subdomain)
+
+| type | name | value |
+| ---- | ---- | ---- |
+| CNAME | domain.com | 	cloudflare-ipfs.com |
+| TXT | domain.com | dnslink=/ipfs/QmfCz1u8qdPSrKpnqS8tL6gFeuH6ojzXFwaBoBQXcm7Txt |
+
+  
+## CROSCCHAIN 
+
+| type | name | value |
+| ---- | ---- | ---- |
+| CNAME | domain.com | 	cloudflare-ipfs.com |
+| TXT | domain.com | dnslink=/ipfs/QmUw2sxD6UE9AGEtWqNFXwLMUqps8NDTgnbuavoWQYQ2Ni |
