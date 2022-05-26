@@ -113,13 +113,10 @@
 
 **A:** Hello! 🤩 We got it! 🥳 The final version of the { название продукта } is available! 🔥 You can see it in our catalog 🛒 - https://tools.onout.org/{ название продукта }!
 
-## Как оптимизировать код?
-
-???
-
 ## Как разработать админку?
 
-???
+0. Оптимизировать код
+0. ???
 
 ## Как добавить продукт в пресейл?
 
