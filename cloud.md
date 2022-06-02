@@ -12,7 +12,7 @@ Hello, please do these steps. dash.cloudflare.com :
 | type | name | value |
 | ---- | ---- | ---- |
 | CNAME | domain.com | 	cloudflare-ipfs.com |
-| TXT | domain.com | dnslink=/ipfs/QmfCz1u8qdPSrKpnqS8tL6gFeuH6ojzXFwaBoBQXcm7Txt |
+| TXT | domain.com | dnslink=/ipfs/QmYA7nGrzQVLmfQZcLXxSzBpXCuoun8eazAoxnAGn8E8aj |
 
   
 ## CROSCCHAIN 
