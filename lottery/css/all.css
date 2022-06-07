@@ -1231,6 +1231,10 @@ template {
   transition: all 0.2s ease-in-out;
 }
 
+.white-color {
+  color: #fff;
+}
+
 .btn {
   display: inline-block;
   vertical-align: top;
