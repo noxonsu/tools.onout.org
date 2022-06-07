@@ -202,6 +202,8 @@
 https://{ ссылка на продукт в пресейле (dash.onout.org) или каталоге (tools.onout.org) }  - Get started!
 https://{ ссылка на демку} - Try live demo right now!
 
+{таймкоды}
+
 We are a blockchain developers team.
 We build no-code tools for creating DEX, DAO, Wallet, Farming, Lottery and NFT marketplace at your own domain. 
 View catalog https://tools.onout.org
@@ -215,4 +217,9 @@ Join the community!
 https://discord.gg/VwKEmHEgVN  - Join Discord
 https://dash.onout.org/ - Join mailing list
 https://twitter.com/onout_org - Follow us on Twitter
+```
+{таймкоды} заменить на таймкоды вида 
+```
+0:25 connect wallet and switch to correct network
+0:30 and attach new domain
 ```
