@@ -200,7 +200,7 @@
 
 ```
 https://{ ссылка на продукт в пресейле (dash.onout.org) или каталоге (tools.onout.org) }  - Get started!
-https://{ ссылка на демку} - Try live demo right now!
+https://{ ссылка на демку } - Try live demo right now!
 
 {таймкоды}
 
