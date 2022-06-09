@@ -210,7 +210,45 @@ function clearKeysData(string[] memory _keys) external;
 - ABI ([Application Binary Interface](https://docs.soliditylang.org/en/develop/abi-spec.html)): JSON интерфейс с помощью которого мы создаем обьект описывающий смарт-контракт (свойства, методы и тд.)
 
 1. Получаем адрес контракта в блокчейне. Используем контракт с BSС: [Хранилище](https://bscscan.com/address/0xa7472f384339d37efe505a1a71619212495a973a)
-2. Получаем ABI: [Ccылка](https://raw.githubusercontent.com/noxonsu/unifactory/main/src/contracts/build/Storage.json). Если публичного доступа нет, тогда нужно создать ABI из самого контракта.
+2. Получаем ABI: [Ccылка](https://raw.githubusercontent.com/noxonsu/unifactory/main/src/contracts/build/Storage.json)
+3. Делаем новый экземпляр контракта из полученных данных:
+
+```js
+import web3 from "web3";
+import { Storage } from "./abis";
+import { STORAGE_ADDRESS } from "./constants";
+// если мы хотим изменить данные, тогда нужно передать провайдера
+// из внешнего кошелька
+const web3 = new Web3("https://bsc-dataseed.binance.org");
+const storage = new web3.eth.Contract(Storage.abi, STORAGE_ADDRESS);
+```
+
+4. Можно использовать контракт:
+   > если работаем с внешним кошельком, нужно находиться на той же сети с которой был создан экземпляр контракта. В данном примере это BSC
+
+```js
+storage.methods.setKeyData("example.com", {
+  owner: "0x...",
+  info: JSON.stringify({
+    foo: 1,
+    bar: 2,
+    subObj: {
+      foo: 3,
+    },
+  }),
+});
+
+storage.methods.getData("example.com");
+// ...
+```
+
+Если публичного доступа к ABI нет, но есть файлы контракта, тогда нужно сделать его самостоятельно. Для этого можно использовать:
+
+- [Remix IDE](https://remix.ethereum.org/): все делается в браузере. Подходит для небольших проектов из 1 или нескольких контрактов
+- [Truffle](https://trufflesuite.com/): набор инструментов для разработки, деплоя и тестирования контрактов
+- [Hardhat](https://hardhat.org/): более продвинутый инструмент
+
+TODO: дополнить
 
 ### Как работать с данными в приложении?
 
