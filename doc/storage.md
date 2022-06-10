@@ -5,113 +5,121 @@
 - [Код контракта](https://github.com/NotEternal/contracts/blob/main/contracts/Storage.sol)
 - Главный задеплоиный контракт для использования находится на **Binance Smart Chain**: [Storage](https://bscscan.com/address/0xa7472f384339d37efe505a1a71619212495a973a#code=)
 
-Можно работать с любыми библиотеками на фронте, но при этом нужно использовать главный контракт хранилища. Этим мы достигнем простоты изменения, переноса и контроля над данными. Будет проблемой, если использовать много контрактов на разных сетях или менять что-то в нем только для себя. Главное думать о совместимости. Нужно что-то изменить в контракте? Тогда делаем новый для всего что его использует.
+Можно работать с любыми библиотеками на фронте, но при этом нужно использовать главный контракт хранилища. Этим мы достигнем простоты изменения, переноса и контроля над данными. Будет проблемой, если использовать много контрактов на разных сетях или менять что-то в нем только для себя. Главное думать о совместимости.
+Если нужно что-то изменить в контракте, тогда сначала создаем новую версию и делаем миграцию всего что использует старый контракт.
 
 ## Сохранение и загрузка данных в приложении
 
 Общая схема работы:
 
 ```
-интерфейс приложения <-> внутренний код <-> хранилище
+      Frontend               Blockchain
+┌──────────────────────┐ ┌──────────────────┐
+│                      │ │                  │
+│ App main interface ◄─┼─┼────────┐         │
+│     │                │ │        │         │
+│     │                │ │        │         │
+│     │                │ │ Storage contract │
+│     │                │ │        ▲         │
+│     ▼                │ │        │         │
+│ Admin panel ─────────┼─┼────────┘         │
+│                      │ │                  │
+└──────────────────────┘ └──────────────────┘
 ```
 
-Если мы хотим видеть сразу увидеть изменения в интерфейсе, после сохранения данных, то нужно в ручную следить за изменением данных в контракте. Пример этой схемы разберем на логотипе: где-то в приложении есть логотип и нужно менять его в зависимости от того что выбрал пользователь.
+### Пример админ панели
 
-> Приблизительный код с примером на [React](https://reactjs.org/). Много частей уменьшенно и упрощенно.
+> код толко на [React](https://reactjs.org/). Много моментов уменьшено и упрощено.
 
-1. В интерфейсе добавляем `input` для адреса логотипа
-2. Добавляем кнопку, которая будет сохранять адрес
+Сделаем панель через которую можно изменить логотип приложения и работать с хранилищем
 
-```jsx
-<input value={logoUrl} onChange={onLogoUrl} />
-<button onClick={saveLogo}>Save</button>
-```
-
-3. Добавляем обработчик сохранения:
-
-```js
-const saveLogo = async () => {
-  await saveData({
-    provider: library.provider,
-    owner: account,
-    data: {
-      logo: logoUrl,
-    },
-  });
-};
-```
-
-4. Где-то создаем функцию `saveData` (можно делать все из компонентов, но лучше разделить функционал и делать это в других частях кода):
+1. Создаем функции для работы с контрактом в `utils.js`:
 
 ```js
 import Web3 from "web3";
+import { currentDomain } from "./utils";
 import { STORAGE_ADDRESS } from "./constants";
 import { Storage } from "./abi";
 
-export const saveData = async ({ provider, owner, data }) => {
+const getStorage = (provider) => {
   const web3 = new Web3(provider);
-  const storage = new web3.eth.Contract(Storage.abi, STORAGE_ADDRESS);
-  const currentDomain = window.location.hostname;
 
-  return storage.methods.setKeyData(currentDomain, {
+  return web3.eth.Contract(Storage.abi, STORAGE_ADDRESS);
+};
+
+export const saveData = async ({ provider, owner, data }) => {
+  const storage = getStorage(provider);
+
+  return storage.methods.setKeyData(currentDomain(), {
     owner,
     info: JSON.stringify(data),
   });
 };
-```
 
-5. Начинаем загрузку данных из хранилища. Cоздаем основную функцию:
-
-```js
 export const fetchData = async (provider) => {
-  const web3 = new Web3(provider);
-  const storage = new web3.eth.Contract(Storage.abi, STORAGE_ADDRESS);
-  const currentDomain = window.location.hostname;
-
-  const { info, owner } = await storage.methods.getData(currentDomain).call();
+  const storage = getStorage(provider);
+  const { info, owner } = await storage.methods.getData(currentDomain()).call();
 
   return { ...JSON.parse(info), admin: owner };
 };
 ```
 
-6. Теперь нужно сохранить запрошенные данные. Используем [Redux для React](https://react-redux.js.org/) + [Redux toolkit](https://redux-toolkit.js.org/) (изменяем место хранения и использование в зависимости от структуры приложения):
-
-```js
-// К примеру этот запрос будет в App.tsx
-useEffect(() => {
-  const fetch = async () => {
-    const data = await fetchData(library.provider);
-
-    dispatch(retrieveData(data));
-  };
-
-  fetch();
-}, [chainId, library]);
-
-...
-
-// в основном файле mainReducer.ts
-export default createReducer(initialState, (builder) =>
-  builder.addCase(retrieveData, (state, action) => {
-    const data = action.payload;
-
-    state.logo = data.logo
-  })
-);
-```
-
-7. Можем использовать логотип в интерфейсе:
+2. Компонент `AdminPanel.jsx`:
 
 ```jsx
-import { useSelector } from "react-redux";
+// ...
+import { saveData } from "./utils";
 
-function Header() {
-  const { logo } = useSelector((state) => state);
+export default function AdminPanel() {
+  const { library, account } = useActiveWeb3React();
+  const [logoUrl, setLogoUrl] = useState("");
+  const onLogoUrl = (event) => setLogoUrl(event.target.value);
+
+  const saveLogo = async () => {
+    await saveData({
+      provider: library.provider,
+      owner: account,
+      data: {
+        logoUrl,
+      },
+    });
+  };
 
   return (
     <div>
-      <img src={logo} />
-      ...
+      <input value={logoUrl} onChange={onLogoUrl} placeholder="Logo URL" />
+      <button onClick={saveLogo} disabled={!logoUrl}>
+        Save
+      </button>
+    </div>
+  );
+}
+```
+
+3. При клике на кнопку мы сохраним JSON строку с `logoUrl` параметром в контракт. Теперь нужно запросить данные при загрузке приложения и применить их. В `App.jsx`:
+
+```js
+// ...
+import { fetchData } from "./utils";
+
+export default function App() {
+  const { library, chainId } = useActiveWeb3React();
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const fetch = async () => {
+      const data = await fetchData(library.provider);
+    };
+
+    fetch();
+  }, [chainId, library]);
+
+  return (
+    <div>
+      <header>
+        <img src={data.logoUrl || "default path"} />
+      </header>
+      {/* ... */}
     </div>
   );
 }
