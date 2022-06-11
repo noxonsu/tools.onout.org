@@ -29,7 +29,7 @@
 
 ### Пример админ панели
 
-> код толко на [React](https://reactjs.org/). Много моментов уменьшено и упрощено.
+> код только на [React](https://reactjs.org/). Много моментов уменьшено и упрощено.
 
 Сделаем панель через которую можно изменить логотип приложения и работать с хранилищем
 
@@ -37,9 +37,10 @@
 
 ```js
 import Web3 from "web3";
-import { currentDomain } from "./utils";
 import { STORAGE_ADDRESS } from "./constants";
-import { Storage } from "./abi";
+import { Storage } from "./contractBuilds";
+
+const currentDomain = () => window.location.hostname || document.location.host;
 
 const getStorage = (provider) => {
   const web3 = new Web3(provider);
@@ -96,7 +97,7 @@ export default function AdminPanel() {
 }
 ```
 
-3. При клике на кнопку мы сохраним JSON строку с `logoUrl` параметром в контракт. Теперь нужно запросить данные при загрузке приложения и применить их. В `App.jsx`:
+3. При клике на кнопку у нас откроется внешний кошелек где нам нужно подтвердить транзакцию. В ней мы сохраним JSON строку с `logoUrl` параметром в контракт. Теперь нужно запросить данные при загрузке приложения и испльзовать их. В `App.jsx`:
 
 ```js
 // ...
@@ -109,6 +110,8 @@ export default function App() {
   useEffect(() => {
     const fetch = async () => {
       const data = await fetchData(library.provider);
+
+      setData(data);
     };
 
     fetch();
