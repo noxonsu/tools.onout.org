@@ -1601,12 +1601,13 @@ img {
 }
 .admin-can .row {
   padding-bottom: 30px;
+  justify-content: center;
 }
 .admin-can .row .col {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.333333%;
-          flex: 0 0 33.333333%;
-  max-width: 33.333333%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .admin-can .btn:not(.trans-btn) {
