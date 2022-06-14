@@ -16,7 +16,7 @@ This was a long way, but we released our new tool - cross-chain bridge. This is 
 
 1. Watch the video on YouTube "How to run a cross-chain bridge" https://www.youtube.com/watch?v=aUk9vJkH6Cc
 2. Connect wallet at dash.onout.org 
-3. Go to https://dash.onout.org/#/products/crosschain and click "Buy for 1000$" (next week the price will rise to 1200$) 
+3. Go to https://dash.onout.org/#/products/crosschain and click "Buy for 1000$". next week the price will rise to 1200$
 4. Download the archive and follow the documentation
 
 Your questions are welcomed! Reply to this email or contact us in discord or telegram using links at the footer. Need more docs? Read Docs https://support.onout.org/hc/1331700057/category/7 
