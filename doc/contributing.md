@@ -43,7 +43,17 @@
 
 Зачем разрабатывать продукты с нуля, если проще скопировать **open source** проекты?<br/>
 Один из критериев для поиска проекта - количество генерируемой комиссии, что указывает на его популярность.<br/>
-Примеры источника идей: [gastracker](https://etherscan.io/gastracker), [dappradar](https://dappradar.com/), [fiverr](https://www.fiverr.com/search/gigs?query=fork&source=main_banner&search_in=everywhere&search-autocomplete-original-term=fork) [upwork](https://www.upwork.com/services/search?q=fork) ,  <br/>
+Примеры источника идей:
+
+- [gastracker](https://etherscan.io/gastracker)
+- [dappradar](https://dappradar.com/)
+- [defipulse](https://www.defipulse.com/defi-list)
+- [cryptototem](https://cryptototem.com/ico-list/)
+- [golden](https://golden.com/query/list-of-cryptocurrency-companies-E5Y)
+- [fiverr](https://www.fiverr.com/search/gigs?query=fork&source=main_banner&search_in=everywhere&search-autocomplete-original-term=fork)
+- [upwork](https://www.upwork.com/services/search?q=fork)
+
+<br/>
 
 Для оформления идеи по [шаблону](./templates/idea.md) необходимо выполнить следующее:
 
