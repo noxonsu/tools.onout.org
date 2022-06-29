@@ -7,3 +7,8 @@
 - какие контракты требуются чтобы **запустить** приложение?
 - если контракты нужны, то для чего они используются?
 - какие файлы и где нужно изменить?
+
+### Примеры
+
+- [LotteryFactory](https://github.com/noxonsu/LotteryFactory/blob/main/ADD_NETWORK.md)
+- [Unifactory](https://github.com/noxonsu/unifactory/blob/main/docs/addNetwork.md)
