@@ -11,4 +11,20 @@
 2. в дискорд
 
 ## Что писать?
-Blablabla
+
+Hello! Since you have a working EVM rpc (link to rpc). Our team can deploy the following products to your network:
+
+- bridge (multichain.org fork)
+- dex (uniswap fork)
+- farming (erc20 token staking)
+- lottery (pancakeswap fork)
+- and other dapp list can be found here tools.onout.org
+
+What is needed from you:
+
+1. information about chainid, rpc, explorer,
+2. multicall, wrapped coin contracts address (we can deploy if don't have)
+
+This will be positive news for your community, the number of transactions will increase. 
+
+Please email support@onout.org or https://t.me/onoutsupportbot with a link to your project. Thank you!
