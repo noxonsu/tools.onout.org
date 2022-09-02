@@ -129,7 +129,7 @@ Feel free to check out our [pre-release video example](https://www.youtube.com/w
 0. Create a cover image sized **744 х 460 px**
 0. Add a new object to associative array `PRODUCTS` with **product id** for a `key`.
 0. Add your product to presale section on dash.onout.org, set product `status` to `development` (or `ready` if the product is finished).
-0. Append a string `new` to array `lables` to display **“NEW”** badge for this product.
+0. Append a string `new` to array `labels` to display **“NEW”** badge for this product.
 
 ## How do I make a landing page for the release?
 
