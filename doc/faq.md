@@ -111,13 +111,13 @@ Feel free to check out our [pre-release video example](https://www.youtube.com/w
 
 **A:** Any information about your preferred way of earning 🤑 can help me make more useful project settings 🧑‍🔧
 
-### Pre-release
+### Pre-release announcement
 
-**A:** Hello! We have done 50% of development progress on { project name } fork. Watch the video: user's usage { link } and admin's usage { link }. This product was added to "presale" tab on dash.onout.org. Presale price - $666. Estimated time for releasing is around 1 month. Cheers!
+**A:** Hello! We're excited to announce that we have completed 50% of development progress on { forked project name } fork. Check out our videos on user interaction { link } and admin interaction { link }. This product is available for presale on dash.onout.org. Presale price is $666. Estimated release date is in around 1 month. Cheers!
 
-### Release
+### Release announcement
 
-**A:** Hello! 🤩 We got it! 🥳 The final version of the { project name } is available! 🔥 Check it out in our catalog 🛒 - https://tools.onout.org/{ project name }!
+**A:** Hello! 🤩 We got it! 🥳 The final version of { project name } is now available! 🔥 Check it out in our catalog 🛒 - https://tools.onout.org/{ project name }!
 
 ## Admin integration
 
@@ -150,7 +150,7 @@ Make sure the `head` element contains the following:
 
 The `body` element must contain `h1` and `h2` headers, each `img` element must have an `alt` attribute with a fitting text description.
 
-## How do I add a product to the catalogue?
+## How do I add a product to the catalog?
 
 0. Use a pre-made [example](https://github.com/noxonsu/tools.onout.org/pull/56/commits/5c79f3ca5f35a1bfd3158e2865714467b3b1c505).
 0. Use presale cover.
@@ -213,7 +213,7 @@ Videos must be uploaded to the team's [youtube channel](https://www.youtube.com/
 0. Add the following **video description**:
 
 ```
-https://{ link to the project in pre-sale (dash.onout.org) or catalogue (tools.onout.org) }  - Get started!
+https://{ link to the project in pre-sale (dash.onout.org) or catalog (tools.onout.org) }  - Get started!
 https://{ link to project demo } - Try live demo right now!
 
 {timecodes}
