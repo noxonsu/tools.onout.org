@@ -1,49 +1,49 @@
-# Как поучавствовать программисту
+# Participation as a developer
 
-Проект объединяет группу одиночных разработчиков, создавая комфортные условия работы
+The project unites a group of independent developers by providing comfortable working conditions.
 
-## Как это работает 
+## How it works
 
-Разработчики делают релиз продуктов А, Б и В. Каждый продукт отличается спросом: продукт А окупает затраты на разработку и приносит прибыль, продукт Б окупает только затраты, а продукт В не окупается вовсе. В итоге продукты окупают затраты.<br/>
-Каждый разработчик вносит вклад в стабильность команды, когда пополняет [каталог продуктов](https://tools.onout.org). При увеличении количества продуктов в каталоге повышается популярность проекта, тем больше к нему доверия, тем больше спрос, тем стабильнее доход.
+Let us assume that three developers release products A, B, and C. These products vary in demand: while product A covers the development costs and generates income, product B only covers the development costs, and product C does not cover the development costs entirely. If the developers of the projects A, B, and C combine their projects, they can all cover the costs of development and receive income.<br/>
+Each developer contributes to team stability by committing his project to the [project catalogue](https://tools.onout.org). As the amount of projects in the catalogue grows, the catalogue becomes more popular, gains trust, rises in demand, and generates more stable income.
 
-## Оплата
+## Payments
 
-### Общее положение
+### General terms and conditions
 
-Разработчики получают фиксированную почасовую оплату или % от продаж <br/>
-Стоимость часа определяется опытом и скиллом разработчика, обсуждается индивидуально.<br/>
-Оплата в криптовалюте.
+The developers either receive payments on fixed hourly rate, or as a share of income. <br/>
+Hourly rate depends on developer experience and skills and is subject to individual negotiation. <br/>
+Payments are delivered in cryptocurrency.
 
-### Условия первой оплаты
+### Conditions for initial payment
 
-Чтобы получить первую оплату в рамках каждого проекта, необходимо перенести все наработки в [репозиторий команды](https://github.com/noxonsu) 
+In order to receive the initial payment for the project, it is required to submit its complete source code into [team repository](https://github.com/noxonsu).
 
-## Ответственность сторон
+## Responsibilities of the parties
 
-От разработчика требуется:
+### Developer responsibilities
 
-- сгенерировать идею ([этап 0](#этап-0---идея-разработчик))
-- разработать продукт ([этап 3](#этап-3---разработка-продукта-разработчик))
+- to generate an idea ([stage 0](#stage-0---idea-developer))
+- to develop a product ([stage 3](#stage-3-–-product-development-developer))
 
-От команды tools.onout.org гарантируется:
+### The tools.onout.org team guarantees
 
-- провести ревью идеи ([этап 1](#этап-1---ревью-идеи-команда))
-- проверить заинтересованность клиентов ([этап 2](#этап-2---заинтересованность-клиентов-команда))
+- to review the product idea ([stage 1](#stage-1-–-review-team))
+- to assess potential demand for the product ([stage 2](#stage-2-–-demand-validation-team))
 
-## С чем работать
+# How to start
 
-Проекты, основанные на блокчейн.
+Why develop new products from ground up when there are **open source** projects available for copying?<br/>
+Select a popular **open source** project, **fork** it, add an admin interface for customization, and record a video showcasing the project for pre-release.
 
-# Как начать
+## What to work with
 
-Найти популярный **open source** проект, сделать **fork**, добавить к нему админку для кастомизации и записать видео для релиза.
+**Open source** projects based on the blockchain technology.
 
-## Этап 0 - идея (разработчик)
+## Stage 0 - Idea (developer)
 
-Зачем разрабатывать продукты с нуля, если проще скопировать **open source** проекты?<br/>
-Один из критериев для поиска проекта - количество генерируемой комиссии, что указывает на его популярность.<br/>
-Примеры источника идей:
+One of the key criteria when searching for a project is the amount of commission it generates, as this number correlates with its popularity.<br/>
+The examples for idea sources:
 
 - [gastracker](https://etherscan.io/gastracker)
 - [dappradar](https://dappradar.com/)
@@ -53,35 +53,33 @@
 - [fiverr](https://www.fiverr.com/search/gigs?query=fork&source=main_banner&search_in=everywhere&search-autocomplete-original-term=fork)
 - [upwork](https://www.upwork.com/services/search?q=fork)
 
-<br/>
+Once you come up with an idea:
 
-Для оформления идеи по [шаблону](./templates/idea.md) необходимо выполнить следующее:
+0. Study the documentation for the original project ([What to look for in documentation?](./faq.md#что-интересует-в-документации))
+0. Locate the **primary** repository ([How do I locate the primary repository?](./faq.md#как-найти-основной-репозиторий)).
+0. Locate any **secondary** repositories ([How do I locate the secondary repositories?](./faq.md#как-найти-дополнительные-репозитории))
+0. Come up with a product name ([How do I come up with a product name?](./faq.md#как-придумать-название-продукта))
 
-0. Изучить документацию исходного проекта ([Что интересует в документации?](./faq.md#что-интересует-в-документации))
-0. Найти **основной** репозиторий ([Как найти основной репозиторий?](./faq.md#как-найти-основной-репозиторий)).
-0. Выяснить наличие **дополнительных** репозиториев ([Как найти дополнительные репозитории?](./faq.md#как-найти-дополнительные-репозитории))
-0. Придумать название продукта ([Как придумать название продукта?](./faq.md#как-придумать-название-продукта))
+Present your idea following the [template](./templates/idea.md) and send the result to our [email](mailto:support@onout.org).
 
-Результат отправить для ревью на [email](mailto:support@onout.org)
+## Stage 1 – Review (team)
 
-## Этап 1 - ревью идеи (команда)
+The tools.onout.org team reviews the idea and provides feedback with resolution: 
 
-Команда tools.onout.org делает ревью идеи и дает обратную связь, в которой сообщает результат ревью: 
+- the idea is approved for development
+- the idea is returned for revision
 
-- идея одобрена к работе
-- идея возвращается на доработку разработчику
+## Stage 2 – Demand validation (team)
 
-## Этап 2 - заинтересованность клиентов (команда)
+The tools.onout.org team pitches the idea to potential clients through the [Ideas](https://dash.onout.org/#/presale) section of the website. Potential demand for the product is then assessed by client voting.
 
-Команда tools.onout.org добавляет идею в раздел [Ideas](https://dash.onout.org/#/presale), где клиенты могу провести голосование, которое покажет степень заинтересованности клиентов.
+## Stage 3 – Product development (developer)
 
-## Этап 3 - разработка продукта (разработчик)
+See this [guide](./development.md) for details on development process.
 
-[Здесь](./development.md) описан подробный процесс разработки.
+# Further information
 
-# Вопросы
-
-Ответы могут быть в [FAQ](./faq.md) или у команды tools.onout.org:
+For further information see our [FAQ](./faq.md) or contact the tools.onout.org team:
 
 - [email](mailto:support@onout.org)
 - [telegram](https://t.me/onoutsupportbot)

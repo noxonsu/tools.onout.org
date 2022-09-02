@@ -1,17 +1,17 @@
-# { название продукта }
+# { Project name }
 
-## Основное
+## Basic information
 
-0. https://{ адрес проекта }
-0. https://github.com/{ автор проекта }/{ название основного репозитория }
-0. { почему среди прочих нужно делать именно форк этого продукта?  }
-0. { перечисление способов заработка администратору проекта }
-0. { перечисление функций, доступных пользователю продукта (обмен токенов, создание пула ликвидности, кредитование и тд) }
-0. { перечисление возможностей кастомизации, доступных администратору проекта (смена шрифта, лого, названия, темы оформления, конфигурирование контрактов и тд) }
+0. https://{ project address }
+0. https://github.com/{ project author }/{ primary repository name }
+0. { Why should this project be forked and not others? }
+0. { What means of income generation does the project provide to its administrator? }
+0. { What does the project deliver to its users? (token exchange, liquidity pool, lending, etc.) }
+0. { What customization is available to the administrator? (different fonts, logo, name, visual theme, contract configuration, etc.) }
 
-## Дополнительно
+## Additional information
 
-0. { оценка времени для реализации идеи }
-0. { есть ли возможность использовать только блокчейн }
-0. { перечисление возможных сложностей реализации }
-0. { план реализации идеи по этапам (по возможности с детальной оценкой времени для реализации) } 
+0. { Estimated development timeframe }
+0. { Is it possible for the frontend to work with blockchain directly? }
+0. { Underlying potential problems in development }
+0. { Development plan divided into stages (with detailed project timeline if possible) }

@@ -1,39 +1,38 @@
-# Как разработать продукт
+# Product development
 
-## 0. Форк
+## 0. Fork
 
-0. Сделать форк **основных и дополнительных** репозиториев в **личный аккаунт** ([Как правильно сделать форк?](./faq.md#как-правильно-сделать-форк))
+0. Fork all **primary** and **secondary** repositories into your **private repository** ([How do I fork a repository?](./faq.md#how-do-i-fork-a-repository))
 
-## 1. Запуск
+## 1. Launch
 
-0. Запустить фронтенд, следуя оригинальному README.md, на оригинальных смарт-контрактах. 
+0. Launch the frontend following the instructions of the original `README.md`. Use the original smart contracts.
 
-### Если требуется клонировать смарт-контракты
+### Clone smart contracts if needed
 
-0. Задеплоить полный набор смарт-контрактов ([Как собрать, задеплоить и настроить смарт контракты?](./faq.md#как-собрать-задеплоить-и-настроить-смарт-контракты)).
-0. Запустить фронтенд на новых смарт-контрактах.
+0. Deploy the complete set of smart contracts ([How do I build, deploy and set up smart contracts?](./faq.md#how-do-i-build-deploy-and-set-up-smart-contracts))
+0. Launch the frontend on the new set of smart contracts.
 
-## 2. Пререлиз
+## 2. Pre-release
 
-0. Оптимизировать зависимости в **package.json** ([Как оптимизировать зависимости?](./faq.md#как-оптимизировать-зависимости))
-0. Заменить оригинальный **title** фронтенда
-0. Заменить оригинальный **логотип** фронтенда ([Где взять логотип на замену оригинальному?](./faq.md#где-взять-логотип-на-замену-оригинальному))
-0. Добавить в dash.onout.org в раздел [presale](https://dash.onout.org/#/presale) ([Как добавить продукт в пресейл?](./faq.md#как-добавить-продукт-в-пресейл))
-0. Записать видео **"Как пользователь может использовать этот продукт"** ([Как записать видео для пререлиза?](./faq.md#как-записать-видео-для-пререлиза))
-0. Разработать лендинг и разместить по адресу **tools.onout.org/{ название продукта }** ([Как разработать лендинг для релиза?](./faq.md#как-разработать-лендинг-для-релиза))
-0. Добавить продукт в каталог tools.onout.org ([Как добавить продукт в каталог?](./faq.md#как-добавить-продукт-в-каталог))
-0. Опубликовать новость о пререлизе в соцсетях команды ([Как правильно вести тех поддержку?](./faq.md#как-правильно-вести-тех-поддержку))
+0. Optimize dependencies in **package.json** ([How do I optimize dependencies?](./faq.md#how-do-i-optimize-dependencies)).
+0. Replace the original frontend **title**.
+0. Replace the original frontend **logo** ([Where do I get a logo?](./faq.md#where-do-i-get-a-logo-to-replace-the-original-one))
+0. Add a project to [presale](https://dash.onout.org/#/presale) section on `dash.onout.org`  ([How do I add a product to presale?](./faq.md#how-do-i-add-a-project-to-presale))
+0. Record a **"How to use the product"** video ([How do I record a pre-release video?](./faq.md#how-do-i-record-a-pre-release-video))
+0. Make a landing page and place it under **tools.onout.org/{ product name }** ([How do I make a landing page for the release?](./faq.md#how-do-i-make-a-landing-page-for-the-release))
+0. Add a product to `tools.onout.org` catalogue ([How do I add a product to the catalogue?](./faq.md#how-do-i-add-a-product-to-the-catalogue))
+0. Make a pre-release publication through team social networks ([How do I provide technical support?](./faq.md#how-do-i-provide-technical-support))
 
-## 3. Релиз
+## 3. Release
 
-0. Разработать лендинг и разместить по адресу **tools.onout.org/{ название продукта }** ([Как разработать лендинг для релиза?](./faq.md#как-разработать-лендинг-для-релиза))
-0. Добавить продукт в каталог tools.onout.org ([Как добавить продукт в каталог?](./faq.md#как-добавить-продукт-в-каталог))
-0. Сделать build, загрузить его в отдельный репозиторий. Желательно в [каталог](https://github.com/appsource). Если нет доступа, то в свой github, и выслать ссылку на [email](mailto:support@onout.org)
-0. Разработать админку для кастомизации продукта ([Как разработать админку?](./faq.md#как-разработать-админку))
-0. Интегрировать админку ([Как разработать админку?](./faq.md#интеграция-админки))
-0. Записать видео **"Как администратор может настраивать этот продукт"** ([Как записать видео для релиза?](./faq.md#как-записать-видео-для-релиза))
-0. Опубликовать новость о пререлизе в соцсетях команды ([Как правильно вести тех поддержку?](./faq.md#как-правильно-вести-тех-поддержку))
+0. Make a landing page and place it under **tools.onout.org/{ product name }** ([How do I make a landing page for the release?](./faq.md#how-do-i-make-a-landing-page-for-the-release))
+0. Add a product to `tools.onout.org` catalogue ([How do I add a product to the catalogue?](./faq.md#how-do-i-add-a-product-to-the-catalogue))
+0. Make a build, upload it into a separate repository, preferably into [catalogue](https://github.com/appsource). If you don't have access, upload it to your personal Github repository and send a link via [email](mailto:support@onout.org).
+0. Develop an admin interface for the product ([How do I develop admin interface for a product?](./faq.md#admin-integration))
+0. Record a **"How can administrator customize the project"** video ([How do I record a release video?](./faq.md#how-do-i-record-a-release-video))
+0. Make a release publication through team social networks ([How do I provide technical support?](./faq.md#how-do-i-provide-technical-support))
 
-## 4. Документация
+## 4. Documentation
 
-0. Добавить инструкцию по добавлению новых сетей ([Добавление сети](./add_network.md))
+0. Add instructions on adding new networks ([Adding networks](./add_network.md))

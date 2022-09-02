@@ -1,14 +1,13 @@
-# Как добавить новую сеть в приложение
+# Adding a new network to an app
 
-После форка приложения нужно добавить инструкцию как добавить EVM сеть в это продукт.
-Моменты которые важно описать:
+Once the app is forked, you need to provide instructions on adding EVN network to the product. It is important to cover the following points:
 
-- куда добавить информацию о новой сети?
-- какие контракты требуются чтобы **запустить** приложение?
-- если контракты нужны, то для чего они используются?
-- какие файлы и где нужно изменить?
+- where to add information on the new network
+- the contracts are needed to **launch** the app
+- the functions the contracts perform
+- the files and the directories to modify
 
-### Примеры
+### Examples
 
 - [LotteryFactory](https://github.com/noxonsu/LotteryFactory/blob/main/ADD_NETWORK.md)
 - [Unifactory](https://github.com/noxonsu/unifactory/blob/main/docs/addNetwork.md)
