@@ -1,16 +1,16 @@
-# Блокчейн хранилище
+# Blockchain storage
 
-Что это? Это смарт-контракт созданный для хранения данных. Для более удобной работы с данными и удешевления использования они хранятся в виде обычных строк, которые нужно изменять за пределами контракта. Все что он делает это сохраняет, меняет, возвращает и удаляет строк(у|и). А за то что в них находится, отвечает тот кто работает с контрактом. На данный момент, для привязки (сохранения, получения, изменения) данных какого-либо приложения к самому приложению мы используем название домена.
+Blockchain storage is a smart contract designed for data storage. In order to cut costs and facilitate operations, the data is stored in string form. These strings of data are modified outside smart contracts. The purpose of a smart contract is to save, modify, return and delete strings, while the contract user is responsible for the actual content. At the moment, we're using domain name to identify the data with the app to save, load, and modify the data as needed.
 
-- [Код контракта](https://github.com/NotEternal/contracts/blob/main/contracts/Storage.sol)
-- Главный задеплоиный контракт для использования находится на **Binance Smart Chain**: [Storage](https://bscscan.com/address/0xa7472f384339d37efe505a1a71619212495a973a#code=)
+- [Storage contract source code](https://github.com/NotEternal/contracts/blob/main/contracts/Storage.sol)
+- The primary deployed storage contract to be used is located on **Binance Smart Chain**: [Storage](https://bscscan.com/address/0xa7472f384339d37efe505a1a71619212495a973a#code=)
 
-Можно работать с любыми библиотеками на фронте, но при этом по возможности нужно использовать единственный контракт хранилища. Этим мы достигнем простоты изменения, переноса и контроля над данными. Будет проблемой, если использовать много контрактов на разных сетях или менять что-то в нем только для себя. Главное думать о совместимости.
-Если нужно что-то изменить в контракте (к примеру улучшить хранение данных или добавить функционал), тогда сначала создаем новую версию контракта, затем делаем миграцию всех приложений, которые используют старый контракт.
+Feel free to apply any frontend libraries and frameworks you like, but only use a single storage contract if possible. This makes it easier to modify, transfer and control the data. Using multiple smart contracts over a number of networks and making individual changes presents a potential pitfall. It is essential to consider compatibility.
+If individual changes are required (i.e. to enhance data storage or to add functionality), start by forking a contract, then make migrations for all the apps using the old contract.
 
-## Сохранение и загрузка данных в приложении
+## Saving and loading data in the app
 
-Общая схема работы:
+General workflow is presented below:
 
 ```
       Frontend               Blockchain
@@ -27,13 +27,13 @@
 └──────────────────────┘ └──────────────────┘
 ```
 
-### Пример админ панели
+### Admin panel example
 
-> код только на [React](https://reactjs.org/). Много моментов уменьшено и упрощено.
+> The examples are in [React](https://reactjs.org/) code. Less significant parts are simplified or left out.
 
-Сделаем панель через которую можно изменить логотип приложения и работать с хранилищем.
+Let us create a panel allowing admin to change app logo and work with blockchain storage.
 
-1. Создаем функции для работы с контрактом в `utils.js`:
+1. Create functions for smart contract interaction in `utils.js`:
 
 ```js
 import Web3 from "web3";
@@ -65,7 +65,7 @@ export const fetchData = async (provider) => {
 };
 ```
 
-2. Компонент `AdminPanel.jsx`:
+2. Create admin panel component `AdminPanel.jsx`:
 
 ```jsx
 // ...
@@ -97,7 +97,7 @@ export default function AdminPanel() {
 }
 ```
 
-3. При клике на кнопку у нас откроется внешний кошелек где нужно подтвердить транзакцию сохранения, в которой мы сохраняем JSON строку с `logoUrl` параметром в контракт. Теперь нужно запросить данные при загрузке приложения и использовать их. В `App.jsx`:
+3. A mouse click on `Save` button opens an external wallet, where the admin needs to confirm save transaction. Through this transaction we save a JSON string with parameter `logoUrl` to the smart contract. Now it's time to load the data with the app and make use of it. Add the following code to `App.jsx`:
 
 ```js
 // ...
@@ -128,39 +128,39 @@ export default function App() {
 }
 ```
 
-## Ответы на популярные вопросы
+## Frequently asked questions
 
-#### Почему обязательно использовать блокчейн?
+### Why do I have to use blockchain?
 
-Mы работаем со смарт-контрактами, работа которых происходит в блокчейне. Приложения также построенны на блокчейне. Возможно усложнить схему и добавить еще что-либо, дополнительные сервера с логикой, увеличить расход ресурсов и времени. но зачем это нужно?
+We are working with smart contracts stored and executed on blockchain. The apps we work on are also based on blockchain. While it is technically possible to extend the scheme with additional servers and backend logic, this would require additional time and resources. But what is the purpose?
 
-### Разница между обычной базой данных и контрактом?
+### What is the difference between a common database and a smart contract?
 
-В базе данных есть заранее готовый интерфейс для работы с данными. В контракте же нет готовых методов или схем для взяимодействия с данными. Нам нужно писать контракт в ручную под свои потребности. В нашем случае структура данных слишком сложна чтобы использовать встроенные в [Solidity](https://docs.soliditylang.org/) типы и способы для их зменения. Поэтому в контракте хранилища все хранится в виде строк, за изменения которых отвечает внешняя сторона.
+Database software has a ready-made data processing interface, while a smart contract lacks data processing methods and schemes by default. It's our job to implement a smart contract manually to fit our requirements. The data structures we use are too complex to apply the types and methods built into [Solidity](https://docs.soliditylang.org/). This is why we store our data on blockchain in string form and modify it from the outside.
 
-#### Почему это лучше?
+#### What are the advantages of blockchain storage?
 
-- Данные хранятся в блокчейне, что означает их распределенную структуру
-- Не нужно делать свой сервер(а) с базой данных
-- Их не сможет изменить или удалить кто-то посторонний
-- Доступ к данным сохраняется 24/7. Сервер тоже может работать в таком режиме, но в распределенной схеме со множеством нод (компьютеров) шансы проблем уменьшаются в разы
+- The data is stored on blockchain, in a decentralized structure.
+- There's no need to develop and maintain server(s) hosting a database.
+- The data is safe from unauthorized modification and deletion.
+- The data is guaranteed to be accessible 24/7. Even though this is also possible with a centralized server, in a decentralized structure featuring multiple nodes (computers) the chances of failure are orders of magnitude lower.
 
-#### Почему это хуже?
+#### What are the disadvantages of blockchain storage?
 
-- Данные прозрачны и открыты, даже если они находятся в нечитаемом для человека виде. Поэтому хранить приватные данные нужно только зашифрованными
-- Явные затраты для клиента, так-как нужно платить за изменение состояния блокчейна
+- The stored data is transparent and open for reading, even though it might not be human readable. It is therefore important to encrypt any private data.  
+- The client bears direct expenses each time he completes a transaction and alters the blockchain state.
 
-#### Почему не использовать тестовый блокчейн?
+#### Why not use blockchain testnet?
 
-Он не имеет своего значения, ценности и доверия. Есть вероятность (совсем небольшая для публичных сетей) сброса блокчейна, то есть удаление его данных. Также исходя из названия можно понять что его состояние менее стабильно чем у главной сети.
+Blockchain testnet does not hold value or inspire trust. There is a possibility (a very minor one for public networks) of blockchain wipeout, i.e. complete deletion of all data. As follows from its name, it is in a less stable state than the mainnet.
 
-#### Почему именно этот контракт?
+#### Why use this particular contract?
 
-Потому что это лучшее что есть на данный момент. Думаю не будет проблемой начать использовать другое решение, если оно появится.
+The smart contract we use is the optimal choice at the moment. It won't be a problem to switch to an alternative solution if needed.
 
-### Как хранятся данные?
+### How is the data stored?
 
-Весь код отвечающий за хранение:
+Take a look at the storage source code:
 
 ```js
 struct Data {
@@ -171,27 +171,27 @@ struct Data {
 mapping(string => Data) private allData;
 ```
 
-Детали:
+In the code above:
 
-- `struct Data`: тип описывающий данные. Включает в себя `owner` ключ содержащий адрес акаунта (может изменять данные) и `info` ключ содержащий строку с данными
-- `(string => ...`: ключ в виде строки, по которому получаем доступ к данным
-- `... => Data)`: значение в виде данных
+- `struct Data` is the type describing the data. Two members are defined within `Data`: `owner` holding the address of owner account with modification rights and `info` holding the actual string data.
+- `(string => ...` is the string key allowing access to the data.
+- `... => Data)` is the returned data value.
 
-### На сколько безопасно хранятся данные?
+### How safe is storing data on blockchain?
 
-Все работает в блокчейне, что означает децентрализованную и криптографически защищенную систему. Данные хранятся распределенно на множестве компьютеров. Их возможно изменить только через указанные правила и с установленного аккаунта (адреса).
+Blockchain is a decentralized cryptographically protected system. The data is stored on multiple computers in a distributed manner. The only way to alter the data is to follow the established rules using the owner account (address).
 
-### Как использовать контракт напрямую?
+### How do I use the smart contract directly?
 
-Два основных метода для работы c хранилищем:
+There are three main methods of working with blockchain storage:
 
-1. Сохранение данных:
+1. Saving data:
 
 ```js
 function setKeyData(string memory _key, Data memory _data) external;
 ```
 
-Первым параметром передаем ключ в виде строки (домен приложения). Вторым обьект в виде `Data` структуры:
+Pass the key string (app domain) as the first argument followed by the data wrapped into a `Data` object of form:
 
 ```js
 {
@@ -200,62 +200,63 @@ function setKeyData(string memory _key, Data memory _data) external;
 }
 ```
 
-2. Получение данных:
+2. Getting data:
 
 ```js
 function getData(string memory _key) external view returns(Data memory);
 ```
 
-Передаем параметр в виде строки (домен) и получаем обьект с адресом владельца и данными.
+Pass the key string (app domain) to get a `Data` object containing owner address and the actual data.
 
-3. Удаление:
+3. Removing data:
 
 ```js
 function clearKeyData(string memory _key) external;
 ```
 
-Дополнительные методы:
+Pass the key string (app domain) to clear data associated with the key.
+
+Additional methods include:
 
 ```js
-// получаем все сохраненные ключи для данных
+// get the keys for all saved Data objects
 function allKeys() external view returns(string[] memory);
-// получаем все сохраненные данные
+// get all saved Data objects
 function allKeysData() external view returns(Data[] memory);
-// можно сохранить сразу несколько обьектов с данными
+// save multpile Data objects at once
 function setKeysData(KeyData[] memory _keysData) external;
-// удаляем множество обьектов
+// remove multpile Data objects at once
 function clearKeysData(string[] memory _keys) external;
 ```
 
-### Как использовать контракт в приложении?
+### How do I use a smart contract inside an app?
 
-Мы можем использовать одну из библиотек для взаимодействия с EVM блокчейном:
+You could use one of the libraries allowing to interact with the EVM blockchain:
 
 - [Web3.js](https://web3js.readthedocs.io/)
 - [Ethers](https://docs.ethers.io/)
 
-Для использования хранилища нужно иметь:
+In order to use the storage, you need:
 
-- Одна из библиотек выше
-- Адрес контракта
-- ABI ([Application Binary Interface](https://docs.soliditylang.org/en/develop/abi-spec.html)): JSON интерфейс с помощью которого мы создаем экземпляр класса описывающий смарт-контракт (свойства, методы и тд.)
+- One of the libraries above
+- Contract address
+- ABI ([Application Binary Interface](https://docs.soliditylang.org/en/develop/abi-spec.html)): a JSON interface allowing one to interact with a smart contract as a class instance with its properties, methods, etc.
 
-1. Получаем адрес контракта в блокчейне. Используем контракт с **BSС**: [Хранилище](https://bscscan.com/address/0xa7472f384339d37efe505a1a71619212495a973a)
-2. Получаем сборку контракта (JSON в котором есть ABI): [Ccылка](https://raw.githubusercontent.com/noxonsu/unifactory/main/src/contracts/build/Storage.json)
-3. Делаем новый экземпляр контракта из полученных данных:
+1. Get the smart contract address on blockchain. Use the contract with **BSС**: [Storage](https://bscscan.com/address/0xa7472f384339d37efe505a1a71619212495a973a).
+2. Get the compiled contract (JSON with ABI) [here](https://raw.githubusercontent.com/noxonsu/unifactory/main/src/contracts/build/Storage.json).
+3. Use the collected data to create a new contract instance:
 
 ```js
 import web3 from "web3";
 import { Storage } from "./abis";
 import { STORAGE_ADDRESS } from "./constants";
-// если мы хотим изменить данные, а не только запрашивать их,
-// то нужно передать провайдера из внешнего кошелька
+// if you need to alter data as well as request it,
+// pass the provider from an external wallet
 const web3 = new Web3("https://bsc-dataseed.binance.org");
 const storage = new web3.eth.Contract(Storage.abi, STORAGE_ADDRESS);
 ```
 
-4. Можно использовать контракт:
-   > если работаем с внешним кошельком, нужно находиться на той же сети с которой был создан экземпляр контракта. В данном примере это BSC
+4. Now you can use the contract. Note that your external wallet must be in the same network as the contract instance (in this example, BSC)
 
 ```js
 storage.methods.setKeyData("example.com", {
@@ -273,29 +274,29 @@ storage.methods.getData("example.com");
 // ...
 ```
 
-Если публичного доступа к ABI нет, но есть файлы контракта, тогда нужно сделать ABI самостоятельно. Для этого можно использовать:
+If ABI is not available to the public, you may need to manually create it. Here is a list of recommended tools:
 
-- [Remix IDE](https://remix.ethereum.org/): все делается в браузере. Подходит для небольших проектов из 1 или нескольких контрактов
-- [Truffle](https://trufflesuite.com/): набор инструментов для локальной разработки, деплоя и тестирования контрактов
-- [Hardhat](https://hardhat.org/): более новый и продвинутый инструмент
+- [Remix IDE](https://remix.ethereum.org/): an IDE that works in a browser window. Applicable for small-scale projects with few contracts.
+- [Truffle](https://trufflesuite.com/): a complex IDE for local development, deployment and testing of smart contracts.
+- [Hardhat](https://hardhat.org/): a more modern and advanced IDE.
 
 #### Remix
 
-1. Добавляем файлы контракта в первую вкладку:
+1. To begin, add the smart contract files to `File explorer` tab:
 
 <img src="./images/Remix-1.png" />
 
-2. Компилируем и копируем ABI:
+2. Compile and copy ABI in `Solidiy compiler` tab:
 
 <img src="./images/Remix-2.png" />
 
-3. Если нужно задеплоить, то открываем последнюю вкладку. Подключаем внешний кошелек предварительно выбрав в нем нужную сеть и деплоим:
+3. If you need to deploy the contract, open `Deploy & run transactions` tab, connect an external wallet, select the correct blockchain network and deploy:
 
 <img src="./images/Remix-3.png" />
 
-### Как работать с данными в приложении?
+### How do I work with data in my app?
 
-После получения данных из контракта, нужно решить, исходя из уже использующихся библиотек, фрейморков и собственного желания, каким образом сохранять и получать данные во всем приложении. Готовые примеры:
+Once you retrieve the data from the contract, it's up to you to decide on the best way to utilize it in your app. Take into account the applied libraries and frameworks. Here are some complete examples:
 
 #### React context
 
@@ -303,25 +304,25 @@ storage.methods.getData("example.com");
 
 #### MobX
 
-### Нужно ли делать панель админа в том же дизайне как и главное приложение?
+### Do I have to make the admin panel in the same design as the main app?
 
-Главная задача сделать готовый продукт как можно быстрее. Со стороны дизайна мы можем сократить время не теряя функционал. Решение делать дизайн админки схожим с основным приложением нужно принимать перед началом разработки учитывая эти моменты:
+Your main goal is to create a complete product in minimal time. Saving time on design and layout allows us to release equally functional product earlier. The decision to design an admin panel that complements the actual app should be made before development and with the following considerations:
 
-- требуемое время: eсли на это потребуется несколько лет, то не нужно пытаться делать одинаковый внешний вид
-- используемые инструменты: если в приложении уже есть готовая дизайн система, возможно будет быстрее использовать её
-- собственные желания: хочется сделать качественно, доступно и красиво. Стоит думать об этом в конце или стараться совместить свои желания с предыдущими пунктами )
+- Requred time: if it will take ages to replicate the original design, there is no point in trying.
+- Applied toolset: if the app is already using a design system, it might be faster to utilize it.
+- Personal preference: understandably, you want to combine quality, accessibility and elegance in your product. It's better to make compromise and focus on the points above.
 
-### Можно ли сделать одну админ панель и использовать во всех приложениях?
+### Can I make a single admin panel for use in multiple apps?
 
-Почему не сделать готовый вариант, такой как [Bootstrap dashboard](https://themes.getbootstrap.com/product/hyper-responsive-admin-dashboard-template/)?
+Why not create a universal solution, such as [Bootstrap dashboard](https://themes.getbootstrap.com/product/hyper-responsive-admin-dashboard-template/)?
 
-Плюсы:
+Pros:
 
-- Сделать основную часть один раз и переиспользовать
-- Изменения для разных продуктов нужно делать только в одном месте
+- Allows to develop the main part once and reuse later.
+- Multiple products can be updated simultaneously.
 
-Минусы:
+Cons:
 
-- Сложно интегрировать в приложения (пока не нашли способ. Возможно single-spa?)
-- Нет разделения на разные приложения и все настройки в одном месте (делать разделение внутри приложения?)
-- Забыть о совпадении в дизайне панели и приложения (если не делать несколько тем)
+- Hard to integrate into actual apps (We are yet to find a way. Perhaps, single-spa?)
+- No differentiation between apps: all the options are in the same spot. This problem may be solved by differentiating on the app level.
+- Admin panel design won't match app design unless we also develop visual themes.
