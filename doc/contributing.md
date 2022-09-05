@@ -55,10 +55,10 @@ The examples for idea sources:
 
 Once you come up with an idea:
 
-0. Study the documentation for the original project ([What to look for in documentation?](./faq.md#что-интересует-в-документации))
-0. Locate the **primary** repository ([How do I locate the primary repository?](./faq.md#как-найти-основной-репозиторий)).
-0. Locate any **secondary** repositories ([How do I locate the secondary repositories?](./faq.md#как-найти-дополнительные-репозитории))
-0. Come up with a product name ([How do I come up with a product name?](./faq.md#как-придумать-название-продукта))
+0. Study the documentation for the original project ([What to look for in documentation?](./faq.md#what-do-i-look-for-in-documentation))
+0. Locate the **primary** repository ([How do I locate the primary repository?](./faq.md#how-do-i-locate-the-primary-repository)).
+0. Locate any **secondary** repositories ([How do I locate the secondary repositories?](./faq.md#how-do-i-locate-secondary-repositories))
+0. Come up with a product name ([How do I come up with a product name?](./faq.md#how-do-i-come-up-with-a-product-name))
 
 Present your idea following the [template](./templates/idea.md) and send the result to our [email](mailto:support@onout.org).
 
