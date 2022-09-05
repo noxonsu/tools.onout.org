@@ -23,13 +23,13 @@ In order to receive the initial payment for the project, it is required to submi
 
 ### Developer responsibilities
 
-- to generate an idea ([stage 0](#stage-0---idea-developer))
-- to develop a product ([stage 3](#stage-3-–-product-development-developer))
+- To generate an idea ([stage 0](#stage-0---idea-developer))
+- To develop a product ([stage 3](#stage-3-–-product-development-developer))
 
 ### The tools.onout.org team guarantees
 
-- to review the product idea ([stage 1](#stage-1-–-review-team))
-- to assess potential demand for the product ([stage 2](#stage-2-–-demand-validation-team))
+- To review the product idea ([stage 1](#stage-1-–-review-team))
+- To assess potential demand for the product ([stage 2](#stage-2-–-demand-validation-team)).
 
 # How to start
 
@@ -45,13 +45,13 @@ Select a popular **open source** project, **fork** it, add an admin interface fo
 One of the key criteria when searching for a project is the amount of commission it generates, as this number correlates with its popularity.<br/>
 The examples for idea sources:
 
-- [gastracker](https://etherscan.io/gastracker)
-- [dappradar](https://dappradar.com/)
-- [defipulse](https://www.defipulse.com/defi-list)
-- [cryptototem](https://cryptototem.com/ico-list/)
-- [golden](https://golden.com/query/list-of-cryptocurrency-companies-E5Y)
-- [fiverr](https://www.fiverr.com/search/gigs?query=fork&source=main_banner&search_in=everywhere&search-autocomplete-original-term=fork)
-- [upwork](https://www.upwork.com/services/search?q=fork)
+- [Gastracker](https://etherscan.io/gastracker)
+- [Dappradar](https://dappradar.com/)
+- [Defipulse](https://www.defipulse.com/defi-list)
+- [Cryptototem](https://cryptototem.com/ico-list/)
+- [Golden](https://golden.com/query/list-of-cryptocurrency-companies-E5Y)
+- [Fiverr](https://www.fiverr.com/search/gigs?query=fork&source=main_banner&search_in=everywhere&search-autocomplete-original-term=fork)
+- [Upwork](https://www.upwork.com/services/search?q=fork)
 
 Once you come up with an idea:
 
@@ -66,8 +66,8 @@ Present your idea following the [template](./templates/idea.md) and send the res
 
 The tools.onout.org team reviews the idea and provides feedback with resolution: 
 
-- the idea is approved for development
-- the idea is returned for revision
+- The idea is approved for development
+- The idea is returned for revision
 
 ## Stage 2 – Demand validation (team)
 
@@ -81,6 +81,6 @@ See this [guide](./development.md) for details on development process.
 
 For further information see our [FAQ](./faq.md) or contact the tools.onout.org team:
 
-- [email](mailto:support@onout.org)
-- [telegram](https://t.me/onoutsupportbot)
-- [discord](https://discord.gg/VwKEmHEgVN)
+- [Email](mailto:support@onout.org)
+- [Telegram](https://t.me/onoutsupportbot)
+- [Discord](https://discord.gg/VwKEmHEgVN)

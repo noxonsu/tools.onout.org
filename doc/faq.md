@@ -6,12 +6,12 @@ Only fork projects under [open source licenses](https://opensource.org/licenses/
 
 ## What do I look for in documentation?
 
-- primary functions the product delivers to the end-user
-- means of income generation for the project administrator
-- whether it is possible for the frontend to work with blockchain directly
-- arguments in favor of the project
-- a link to the primary repository (frontend)
-- links to any possible secondary repositories (smart contracts, utilities, helpers)
+- Primary functions the product delivers to the end-user.
+- Means of income generation for the project administrator.
+- Whether it is possible for the frontend to work with blockchain directly.
+- Arguments in favor of the project.
+- A link to the primary repository (frontend).
+- Links to any possible secondary repositories (smart contracts, utilities, helpers).
 
 ## How do I locate the primary repository?
 
@@ -29,10 +29,10 @@ Try to reflect the main function the product delivers to the end users... or use
 
 ## How do I fork a repository?
 
-- go to repository page on Github and click **Fork**
-- open **Settings** of the forked repository and make sure **Issues** are enabled
-- for frontend repositories add **redirect** following [this example](https://github.com/noxonsu/unifactory/pull/85/files#diff-c2cc24bc9001b11b6add48a4cd8f893d5d6c6e4d1bd254158bd14ab997f552cdR13)
-- connect **Cloudflare pages** for auto-deploy.
+- Go to repository page on Github and click **Fork**.
+- Open **Settings** of the forked repository and make sure **Issues** are enabled.
+- For frontend repositories add **redirect** following [this example](https://github.com/noxonsu/unifactory/pull/85/files#diff-c2cc24bc9001b11b6add48a4cd8f893d5d6c6e4d1bd254158bd14ab997f552cdR13).
+- Connect **Cloudflare pages** for auto-deploy.
 
 ## How do I build, deploy and set up smart contracts?
 
@@ -51,18 +51,18 @@ There are two ways to deploy a project:
 
 In order to deploy a project manually:
 
-- compile smart contracts using **Remix**, **Truffle**, or **Hardhat**
-- acquire **ABI** and **bytecode** for the smart contract in JSON format
-- if smart contract constructor requires any arguments, acquire them as well
-- send a transaction through one of these providers:
+- Compile smart contracts using **Remix**, **Truffle**, or **Hardhat**.
+- Acquire **ABI** and **bytecode** for the smart contract in JSON format.
+- If smart contract constructor requires any arguments, acquire them as well.
+- Send a transaction through one of these providers:
   - [Deploy through **Web3js**](https://web3js.readthedocs.io/en/v1.7.3/web3-eth-contract.html#deploy)
   - [Deploy through **Ethers**](https://docs.ethers.io/v5/api/contract/contract-factory/)
 
 Here's an example of deployment through **Web3js**:
 
-- [primary method of deployment](https://github.com/noxonsu/unifactory/blob/bb85d3c974948213a4f0e383f1dfbefd5f8bfd2a/src/utils/contract.ts#L18)
-- uniswap fork: [factory deployment](https://github.com/noxonsu/unifactory/blob/bb85d3c974948213a4f0e383f1dfbefd5f8bfd2a/src/utils/contract.ts#L51)
-- anyswap fork: [token deployment](https://github.com/noxonsu/anyswap-crosschain/blob/ad18ce3925b5e69fbaed04caba646df48da21424/src/utils/contract.ts#L78)
+- [Primary method of deployment](https://github.com/noxonsu/unifactory/blob/bb85d3c974948213a4f0e383f1dfbefd5f8bfd2a/src/utils/contract.ts#L18)
+- Uniswap fork: [factory deployment](https://github.com/noxonsu/unifactory/blob/bb85d3c974948213a4f0e383f1dfbefd5f8bfd2a/src/utils/contract.ts#L51)
+- Anyswap fork: [token deployment](https://github.com/noxonsu/anyswap-crosschain/blob/ad18ce3925b5e69fbaed04caba646df48da21424/src/utils/contract.ts#L78)
 
 ### Setup
 
@@ -89,12 +89,12 @@ Feel free to check out our [pre-release video example](https://www.youtube.com/w
 
 ## How do I provide technical support?
 
-- use more emojis 😍
-- be responsive 😇
-- do not make promises on exact dates 🤔
-- never promise to integrate features without doing your research first (are they at all possible?) 🐤
-- use even more emojis 😱
-- ask for your clients opinion 🙌
+- Use more emojis 😍
+- Be responsive 😇
+- Do not make promises on exact dates 🤔
+- Never promise to integrate features without doing your research first (are they at all possible?) 🐤
+- Use even more emojis 😱
+- Ask for your client's opinion 🙌
 
 ### Sample answers
 
