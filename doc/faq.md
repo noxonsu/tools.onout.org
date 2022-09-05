@@ -119,9 +119,9 @@ Feel free to check out our [pre-release video example](https://www.youtube.com/w
 
 **A:** Hello! 🤩 We got it! 🥳 The final version of { project name } is now available! 🔥 Check it out in our catalog 🛒 - https://tools.onout.org/{ project name }!
 
-## Admin integration
+## Admin panel integration
 
-0. ???
+See our guide to [Blockchain storage](./storage.md#blockchain-storage) for instructions on creating an admin panel and managing the data stored on blockchain.
 
 ## How do I add a project to presale?
 
