@@ -282,7 +282,7 @@ If ABI is not available to the public, you may need to manually create it. Here 
 
 #### Remix
 
-1. To begin, add the smart contract files to `File explorer` tab:
+1. To begin, add the smart contract files in `File explorer` tab:
 
 <img src="./images/Remix-1.png" />
 
