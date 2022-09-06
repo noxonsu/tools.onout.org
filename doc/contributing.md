@@ -1,35 +1,35 @@
 # Participation as a developer
 
-The project unites a group of independent developers by providing comfortable working conditions.
+Add your product to tools.onout.org and earn up to 50% of sales. (this means you work for one month, and earn passive income). How much? 
 
-## How it works
 
-Let us assume that three developers release products A, B, and C. These products vary in demand: while product A covers the development costs and generates income, product B only covers the development costs, and product C does not cover the development costs entirely. If the developers of the projects A, B, and C combine their projects, they can all cover the costs of development and receive income.<br/>
-Each developer contributes to team stability by committing his project to the [project catalogue](https://tools.onout.org). As the amount of projects in the catalogue grows, the catalogue becomes more popular, gains trust, rises in demand, and generates more stable income.
-
-## Payments
-
-### General terms and conditions
-
-The developers either receive payments on fixed hourly rate, or as a share of income. <br/>
-Hourly rate depends on developer experience and skills and is subject to individual negotiation. <br/>
-Payments are delivered in cryptocurrency.
+## General terms and conditions
+- tools.onout.org team provide complete guide for developers
+- tools.onout.org team find customers who pay for product developer (you) made
+- The developers either receive payments as a share of income from each sale
+- Payments are delivered in cryptocurrency and/or payoneer.com.
 
 ### Conditions for initial payment
 
-In order to receive the initial payment for the project, it is required to submit its complete source code into [team repository](https://github.com/noxonsu).
+In order to receive the initial payment for the project, it is required to pass 1st stage in development, submit sources to [team repository](https://github.com/noxonsu), publish ALPHA version of the product in "PRESALE" tab at dash.onout.org 
+
+### Skills requirement
+- Basic web3 knowledge, for example pass this course https://cryptozombies.io/en/lesson/6/chapter/1 
+- Basic JS knowledge
 
 ## Responsibilities of the parties
 
 ### Developer responsibilities
 
-- To generate an idea ([stage 0](#stage-0---idea-developer))
-- To develop a product ([stage 3](#stage-3-–-product-development-developer))
+- To generate an idea ([stage 0](#contributing0))
+- To develop a product ([stage 2](#contributing2))
 
 ### The tools.onout.org team guarantees
 
-- To review the product idea ([stage 1](#stage-1-–-review-team))
-- To assess potential demand for the product ([stage 2](#stage-2-–-demand-validation-team)).
+- To review the product idea ([stage 1](#contributing1))
+- Security Audit
+- Publish product at tools.onout.org and promote in our channels
+- Support and communication with clients (if you don't like this)
 
 # How to start
 
@@ -42,7 +42,8 @@ Select a popular **open source** project, **fork** it, add an admin interface fo
 
 ## Stage 0 - Idea (developer)
 
-One of the key criteria when searching for a project is the amount of commission it generates, as this number correlates with its popularity.<br/>
+One of the key criteria when searching for a project is the amount of users or commission it generates, as this number correlates with its popularity.<br/>
+
 The examples for idea sources:
 
 - [Gastracker](https://etherscan.io/gastracker)
@@ -62,18 +63,14 @@ Once you come up with an idea:
 
 Present your idea following the [template](./templates/idea.md) and send the result to our [email](mailto:support@onout.org).
 
-## Stage 1 – Review (team)
+## <a name="contributing1"></a> Stage 1 – Review (team)
 
 The tools.onout.org team reviews the idea and provides feedback with resolution: 
 
 - The idea is approved for development
 - The idea is returned for revision
 
-## Stage 2 – Demand validation (team)
-
-The tools.onout.org team pitches the idea to potential clients through the [Ideas](https://dash.onout.org/#/presale) section of the website. Potential demand for the product is then assessed by client voting.
-
-## Stage 3 – Product development (developer)
+## <a name="contributing2"></a> Stage 2 – Product development (developer)
 
 See this [guide](./development.md) for details on development process.
 
