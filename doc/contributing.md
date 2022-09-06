@@ -1,6 +1,8 @@
 # Participation as a developer
 
-Add your product to tools.onout.org and earn up to 50% of sales. (this means you work for one month, and earn passive income). How much? 
+https://youtu.be/cLlQ4MIuyes - Watch the video 📺 
+
+Add your product to tools.onout.org and earn up to 50% of sales. (this means you work for one month, and earn 🏖 passive income). How much? 
 
 
 ## General terms and conditions
