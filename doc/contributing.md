@@ -42,7 +42,7 @@ Select a popular **open source** project, **fork** it, add an admin interface fo
 
 **Open source** projects based on the blockchain technology.
 
-## Stage 0 - Idea (developer)
+## <a name="contributing0"></a> Stage 0 - Idea (developer)
 
 One of the key criteria when searching for a project is the amount of users or commission it generates, as this number correlates with its popularity.<br/>
 
