@@ -27,6 +27,11 @@ General workflow is presented below:
 └──────────────────────┘ └──────────────────┘
 ```
 
+Note that each save (modify, delete) operation on blockchain storage causes a transaction refreshing the set of data associated with the smart contract. The data itself is stored on blockchain indefinitely. As a result:
+
+1. Each such operation requires the owner to pay gas fee
+2. Smart contract is responsible for extracting the correct version of the data from blockchain
+
 ### Admin panel example
 
 > The examples are in [React](https://reactjs.org/) code. Less significant parts are simplified or left out.
