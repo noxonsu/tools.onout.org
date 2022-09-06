@@ -1,221 +1,222 @@
-# Ответы на популярные вопросы
+# Frequently asked questions
 
-## С какими репозиториями работать?
+## What repositories can I work with?
 
-Только с [открытой лицензией](https://opensource.org/licenses/category) для **копирования**, например: **mit, gpl**.
+Only fork projects under [open source licenses](https://opensource.org/licenses/category) that allow **copying**, such as **MIT**, **GPL**.
 
-## Что интересует в документации?
+## What do I look for in documentation?
 
-- основные функции продукта для пользователя
-- способы заработка администратору проекта
-- возможность работы фронтенда только с блокчейном
-- аргументы в пользу выбора проекта
-- ссылка на основной репозиторий (фронтенд)
-- ссылки на все возможные дополнительные репозитории (смарт-контракты, утилиты, хэлперы)
+- Primary functions the product delivers to the end-user.
+- Means of income generation for the project administrator.
+- Whether it is possible for the frontend to work with blockchain directly.
+- Arguments in favor of the project.
+- A link to the primary repository (frontend).
+- Links to any possible secondary repositories (smart contracts, utilities, helpers).
 
-## Как найти основной репозиторий?
+## How do I locate the primary repository?
 
-Ссылка на основной репозиторий находится либо в футере главной страницы проекта, либо в документации.<br/>
-[Важный момент](#с-какими-репозиториями-работать)
+A link to the primary repository is usually included in the project main page footer. It can also be found in project documentation.<br/>
+**Important**: [Repositories to work with](#what-repositories-can-i-work-with)
 
-## Как найти дополнительные репозитории?
+## How do I locate secondary repositories?
 
-Если дополнительные репозитории не указаны в документации, их можно найти по зависимостям в основном репозитории в **packages.json**.<br/>
-[Важный момент](#с-какими-репозиториями-работать)
+Secondary repositories are usually mentioned in project documentation. They can also be found as dependencies in **packages.json** file of the primary repository.<br/>
+**Important**: [Repositories to work with](#what-repositories-can-i-work-with)
 
-## Как придумать название продукта?
+## How do I come up with a product name?
 
-Название должно отражать основную функцию продукта... или воспользоваться [генератором названий](https://namelix.com)
+Try to reflect the main function the product delivers to the end users... or use this [name generator](https://namelix.com).
 
-## Как правильно сделать форк?
+## How do I fork a repository?
 
-- в настройках репозитория форка включить **issue**
-- для репозитория фронтенда добавить **редирект** по [примеру](https://github.com/noxonsu/unifactory/pull/85/files#diff-c2cc24bc9001b11b6add48a4cd8f893d5d6c6e4d1bd254158bd14ab997f552cdR13)
-- подключить **Cloudflare pages** для автодеплоя
+- Go to repository page on Github and click **Fork**.
+- Open **Settings** of the forked repository and make sure **Issues** are enabled.
+- For frontend repositories add **redirect** following [this example](https://github.com/noxonsu/unifactory/pull/85/files#diff-c2cc24bc9001b11b6add48a4cd8f893d5d6c6e4d1bd254158bd14ab997f552cdR13).
+- Connect **Cloudflare pages** for auto-deploy.
 
-## Как собрать, задеплоить и настроить смарт контракты?
+## How do I build, deploy and set up smart contracts?
 
-### Сборка
+### Build
 
-В README.md репозитория контрактов есть инструкция по их сборке.
+See `README.md` of the smart contract repository for build instructions.
 
-### Деплой
+### Deployment
 
-Деплой контрактов производится двумя путями:
+There are two ways to deploy a project:
 
-- по инструкции в README.md репозитория контрактов
-- вручную
+- following the instructions of the smart contract repository `README.md`
+- manually
 
-### Ручной деплой
+### Manual deployment
 
-Для ручного деплоя нужно:
- 
-- собрать контракты с использованием конструктора: **Remix**, **Truffle** или **Hardhat**
-- получить **ABI** и **bytecode** контракта в JSON формате
-- если в конструкторе контракта есть аргументы, то также получить их
-- отправить транзакцию через один из провайдеров:
-  - **Web3js**: [деплой](https://web3js.readthedocs.io/en/v1.7.3/web3-eth-contract.html#deploy)
-  - **Ethers**: [деплой](https://docs.ethers.io/v5/api/contract/contract-factory/)
+In order to deploy a project manually:
 
-Пример с деплоем через **Web3js**:
-- [основной способ деплоя](https://github.com/noxonsu/unifactory/blob/bb85d3c974948213a4f0e383f1dfbefd5f8bfd2a/src/utils/contract.ts#L18)
-- uniswap fork: [деплой фабрики](https://github.com/noxonsu/unifactory/blob/bb85d3c974948213a4f0e383f1dfbefd5f8bfd2a/src/utils/contract.ts#L51)
-- anyswap fork: [деплой токена](https://github.com/noxonsu/anyswap-crosschain/blob/ad18ce3925b5e69fbaed04caba646df48da21424/src/utils/contract.ts#L78)
+- Compile smart contracts using **Remix**, **Truffle**, or **Hardhat**.
+- Acquire **ABI** and **bytecode** for the smart contract in JSON format.
+- If smart contract constructor requires any arguments, acquire them as well.
+- Send a transaction through one of these providers:
+  - [Deploy through **Web3js**](https://web3js.readthedocs.io/en/v1.7.3/web3-eth-contract.html#deploy)
+  - [Deploy through **Ethers**](https://docs.ethers.io/v5/api/contract/contract-factory/)
 
-### Настройка
+Here's an example of deployment through **Web3js**:
 
-Настройка контрактов уникальна. Детали в документации к контрактам.
+- [Primary method of deployment](https://github.com/noxonsu/unifactory/blob/bb85d3c974948213a4f0e383f1dfbefd5f8bfd2a/src/utils/contract.ts#L18)
+- Uniswap fork: [factory deployment](https://github.com/noxonsu/unifactory/blob/bb85d3c974948213a4f0e383f1dfbefd5f8bfd2a/src/utils/contract.ts#L51)
+- Anyswap fork: [token deployment](https://github.com/noxonsu/anyswap-crosschain/blob/ad18ce3925b5e69fbaed04caba646df48da21424/src/utils/contract.ts#L78)
 
-Примеры настройки контрактов:
+### Setup
+
+Smart contract setup is unique for each contract. See smart contract documentation for setup details.
+
+Smart contract setup examples:
 - [aave v2](#)
 
-## Где взять логотип на замену оригинальному?
+## Where do I get a logo to replace the original one?
 
-[Логотип](https://github.com/noxonsu/Lenda/blob/main/public/aaveLogo.png)
+Use our generic [logo](https://github.com/noxonsu/Lenda/blob/main/public/aaveLogo.png).
 
-## Как записать видео для пререлиза?
+## How do I record a pre-release video?
 
-[Основное положение](#как-записать-видео) по записи видео.
+See our instructions on [recording a video](#how-do-i-record-a-video).
 
-**Цель** пререлиза - показать работоспособность форка на примере сценария пользования пользователем продукта.<br/>
-**Задача** - записать видео, в котором продемонстрирован функционал продукта.<br/>
-**Название видео:** `{ название продукта } user interface. What user can do.`
+The pre-release **goal** is to demonstrate the capability of a fork on example of user interaction with the product.<br/>
+The **objective** is to record a video highlighting product functionality.<br/>
+Follow this pattern to **name your video**: `{ project name } user interface. What user can do.`
 
-[Пример видео пререлиза](https://www.youtube.com/watch?v=rqA7NEvgV5Q)
+Feel free to check out our [pre-release video example](https://www.youtube.com/watch?v=rqA7NEvgV5Q).
 
-[Опубликовать видео](#как-опубликовать-видео-на-youtube-канале) на калане команды.
+[Publish the video](#how-do-i-upload-a-video-to-youtube) on team channel.
 
-## Как правильно вести тех поддержку?
+## How do I provide technical support?
 
-- больше смайлов 😍
-- быть отзывчивым 😇
-- не обещать точных дат 🤔
-- не обещать внедрение фич без предварительного исследования на предмет возможности внедрения 🐤
-- еще больше смайлов 😱
-- интересоваться мнением клиентов 🙌
+- Use more emojis 😍
+- Be responsive 😇
+- Do not make promises on exact dates 🤔
+- Never promise to integrate features without doing your research first (are they at all possible?) 🐤
+- Use even more emojis 😱
+- Ask for your client's opinion 🙌
 
-### Примеры ответов
+### Sample answers
 
-**Q:** When will this be available? Will it be available for BSC? This standalone or wp plugin?<br/>
-**A:** I guess 😅 the testnet version will be available for a few days 🧑‍🔧. Now I am not sure about BSC supporting, but It may be in future if we will find a sponsor 😇. It will be a standalone until 🙌
+**Q:** When will this feature be available? Will it be available for BSC? Is it standalone or wp plugin?<br/>
+**A:** I guess 😅 the testnet version will be available in a few days 🧑‍🔧. I am not sure about BSC support now, but it may be available in the future if we find a sponsor 😇. It will be standalone until then 🙌
 
 **Q:** Nice is it ready?<br/>
-**A:** It's not ready yet 😅 , but I will keep u updated 🙌
+**A:** It's not ready yet 😅, but I will keep u updated 🙌
 
 **Q:** Hello dev. This product will function just like aave with a governance token all smart contracts owned by the platform?<br/>
-**A:** It's not quite right 😇, It will function like only aave protocol without a governance token.
+**A:** It's not quite right 😇, it will function like aave protocol only without a governance token.
 
-### Опрос
+### Survey
 
 **A:** Any information about your preferred way of earning 🤑 can help me make more useful project settings 🧑‍🔧
 
-### Пререлиз
+### Pre-release announcement
 
-**A:** Hello! We have done 50% of development progress a { название продукта } fork. Watch the video: user's usage { ссылка } and admin's usage { ссылка }. This product was added to "presale" tab on dash.onout.org. Presale price - $666. Estimate time for releasing is around 1 month. Cheers!
+**A:** Hello! We're excited to announce that we have completed 50% of development progress on { forked project name } fork. Check out our videos on user interaction { link } and admin interaction { link }. This product is available for presale on dash.onout.org. Presale price is $666. Estimated release date is in around 1 month. Cheers!
 
-### Релиз
+### Release announcement
 
-**A:** Hello! 🤩 We got it! 🥳 The final version of the { название продукта } is available! 🔥 You can see it in our catalog 🛒 - https://tools.onout.org/{ название продукта }!
+**A:** Hello! 🤩 We got it! 🥳 The final version of { project name } is now available! 🔥 Check it out in our catalog 🛒 - https://tools.onout.org/{ project name }!
 
-## Интеграция админки
+## Admin panel integration
 
-0. ???
+See our guide to [Blockchain storage](./storage.md#blockchain-storage) for instructions on creating an admin panel and managing the data stored on blockchain.
 
-## Как добавить продукт в пресейл?
+## How do I add a project to presale?
 
-0. Сгенерировать логотип [генератором названий](https://namelix.com)
-0. Создать кавер с размером **744 х 460 px**
-0. Добавить объект продукта в ассоциативный массив `PRODUCTS`, где `key` это **id продукта**.
-0. Добавить продукт в пресейл секцию dash.onout.org, установив `status` продукта в `development` (для готового продукта `ready`).
-0. Добавить строку `new` в массив `lables`, чтобы у продукта отображался бэйджик **“NEW”**
+0. Use [name generator](https://namelix.com) to generate a logo
+0. Create a cover image sized **744 х 460 px**
+0. Add a new object to associative array `PRODUCTS` with **product id** for a `key`.
+0. Add your product to presale section on dash.onout.org, set product `status` to `development` (or `ready` if the product is finished).
+0. Append a string `new` to array `labels` to display **“NEW”** badge for this product.
 
-## Как разработать лендинг для релиза?
+## How do I make a landing page for the release?
 
-Подготовить пул реквест в соотвествии с [примером](#):
+Make a pull request (see [example](#)):
 
-0. Использовать готовую [лендинг страницу](https://github.com/noxonsu/tools.onout.org/tree/main/lenda).
-0. Так же смотрите в леднинг страницы про [SEO оптимизацию](#как-оптимизировать-seo-для-лендинг-страницы)
-0. Актуализировать все данные.
+0. Use the existing [landing page](https://github.com/noxonsu/tools.onout.org/tree/main/lenda).
+0. Check out our notes on [SEO optimization](#how-do-i-optimize-landing-page-seo).
+0. Make sure all the data is up-to-date.
 
-## Как оптимизировать SEO для лендинг страницы?
+## How do I optimize landing page SEO?
 
-Обязательно нужно добавить в `head` элемент:
+Make sure the `head` element contains the following:
 
-0. Key words - `<meta name="keywords" content="...">` сюда нужно добавить основные слова связанные с этим продуктом, чтобы было легче писать заголовок и описание продукта, да и в общем контент на странице описывать (общие ключи: `web3, no-code, white label, clone, fork, copy, tool, evm`)
-1. Title - `<title>Project name - build your own * like * <title/>` название продукта и краткое описание того что можно с ним сделать
-2. Description - полное описание того что делает этот продукт, так же дополняем приложение что это форк определенного проекта, что может делать администратор по изменениям в продукте. Но не слишком длинное, представьте, что оно показывается в поисковой выдаче
-3. Site favicon - для браузеров и в некоторых поисковых системах
+0. Keywords: `<meta name="keywords" content="...">`. Add main keywords associated with your product. Common keywords include `web3, no-code, white label, clone, fork, copy, tool, evm`. The right keywords make creating a good product description easier and simplify making page content.
+0. Title: `<title>Project name - build your own * like * <title/>`. The `<title>` tag should include product name and brief description of its functions.
+0. Description: `<meta name="description" content="...">`. Description should contain a detailed description of the product functionality and the administrator options. Don't forget to mention that the app is a fork of a certain project. Make the description brief enough to fit a search result.
+0. Include Site favicon for use by browsers and certain search engines.
 
-В элементе `body` не забываем про `h1`, `h2` заголовки, и к кажджому `img` элементу (изображению) описание в `alt` аттрибут.
+The `body` element must contain `h1` and `h2` headers, each `img` element must have an `alt` attribute with a fitting text description.
 
+## How do I add a product to the catalog?
 
-## Как добавить продукт в каталог?
+0. Use a pre-made [example](https://github.com/noxonsu/tools.onout.org/pull/56/commits/5c79f3ca5f35a1bfd3158e2865714467b3b1c505).
+0. Use presale cover.
+0. Details should containt a link to [release landing page](#how-do-i-make-a-landing-page-for-the-release).
+0. Preview should containt a link to project demo.
 
-0. Использовать готовый [пример](https://github.com/noxonsu/tools.onout.org/pull/56/commits/5c79f3ca5f35a1bfd3158e2865714467b3b1c505).
-0. Кавер использовать из пресейла.
-0. Details - ссылка на [лендинг релиза](#как-разработать-лендинг-для-релиза).
-0. Preview - ссылка на демо продукта.
+## How do I record a release video?
 
-## Как записать видео для релиза?
+See our instructions on [recording a video](#how-do-i-record-a-video).
 
-[Основное положение](#как-записать-видео) по записи видео.
+The release **goal** is to demonstrate the capability of admin interface on example of admin interaction with the product.<br/>
+The **objective** is to record a video highlighting admin functionality and forms of income generation.<br/>
+Follow this pattern to **name your video**: `How to create a DEX on your own domain without coding skills. { project name } fork (copy) tutorial.`
 
-**Цель** релиза - показать работоспособность админки на примере сценария пользования администратором проекта.<br/>
-**Задача** - записать видео, в котором продемонстрированы функционал админки и способы заработка.<br/>
-**Название видео:** `How to create a DEX on your own domain without coding skills. { название продукта } fork (copy) tutorial.`
+Feel free to check out our [release video example](#).
 
-[Пример видео пререлиза](#)
-
-[Опубликовать видео](#как-опубликовать-видео-на-youtube-канале) на канале команды.
+[Publish the video](#how-do-i-upload-a-video-to-youtube) on team channel.
 
 ---
 
-## Как записать видео?
+## How do I record a video?
 
-Видео записывается штатными программами для записи экрана или иными по выбору.<br/>
-**Важный момент:** вотермарки должны отсутствовать на видео.
+Video can be recorded with basic screen capture software of your choice.<br/>
+**Important**: Make sure there are no **watermarks** on your video.
 
-**Важно озвучить каждое действие на видео.**
-Озвучивать видео только на **английском языке**.<br/>
-Использовать либо **собственный голос** (при наличии разговорного английского), либо использовать онлайн **синтезатор речи** [voicemaker](#как-пользоваться-синтезатором-речи).<br/>
-Обязательно использовать [инструмент проверки грамматики](https://languagetool.org).<br/>
-**Важный момент:** слова-паразиты, длинные паузы должны отсутствовать.
+**It is crucial to vocally describe every action seen in the video.**
+Videos must be voiced in **English**.<br/>
+Use **your own voice** if you are fluent in English, or apply an online [speech synthesizer](#how-do-i-use-voicemaker-speech-synthesizer).<br/>
+Make sure to run [grammar check](https://languagetool.org) on your script before recording.<br/>
+**Important**: Avoid filler words and long pauses.
 
-Для монтирования видео рекомендуется использовать [shotcut](https://shotcut.org/download/)
+We recommend [Shortcut](https://shotcut.org/download/) for video editing.
 
-Формат видео **1080p 30fps**
+Use the following video quality settings: **1080p, 30fps**
 
-## Как пользоваться синтезатором речи voicemaker?
+## How do I use Voicemaker speech synthesizer?
 
-Сервис [voicemaker](https://voicemaker.in) позволяет бесплатно синтезировать речь, по звучанию близкую к настоящей.
+[Voicemaker](https://voicemaker.in) is a service that provides realistic synthesized speech.
 
-Наcтройки:
+Use the following settings:
 
 0. AI Engine -> Neural TTS
-0. Voices -> Matthew (или другой на выбор)
+0. Voices -> Matthew (or any other voice of your choice)
 0. Voice Settings -> Voice Speed -> -5%
 
-Как "выжать" максимум из бесплатной подписки:
+In order to get the most from the service for free:
 
-0. Использовать лимит **без регистрации** (около 20 загрузок).
-0. Использовать лимит **с регистрацией на бесплатном тарифе** (около 100 загрузок).
-0. Повтор с пункта 0 с включенным VPN (работает не со всеми бесплатными).
+0. Exhaust **no registration** limit (est. 20 downloads)
+0. Register and exhaust **free subscription** limit (est. 100 downloads)
+0. Turn on VPN and start over (might not work without registration).
 
-**Важный момент:** нужно использовать запятые, чтобы избежать "слипание" фраз.
+**Important**: Use commas to insert pauses and separate phrases.  
 
-## Как опубликовать видео на youtube канале?
+## How do I upload a video to Youtube?
 
-Опубликовать видео нужно на [youtube](https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw) канале команды.
+Videos must be uploaded to the team's [youtube channel](https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw).
 
-0. Потребуется **gmail** аккаунт, который должен иметь права **администратора** канала (за доступом обращаться к команде).
-0. Если нет **плейлиста проекта**, необходимо создать новый **плейлист с названием проекта**.
-0. Описание к видео:
+0. You need a **gmail** account with **channel admin** rights. Contact the team to gain access.
+0. Create a new **project playlist** if there isn't one.
+0. Add the following **video description**:
 
 ```
-https://{ ссылка на продукт в пресейле (dash.onout.org) или каталоге (tools.onout.org) }  - Get started!
-https://{ ссылка на демку } - Try live demo right now!
+https://{ link to the project in pre-sale (dash.onout.org) or catalog (tools.onout.org) }  - Get started!
+https://{ link to project demo } - Try live demo right now!
 
-{таймкоды}
+{timecodes}
 
 We are a blockchain developers team.
 We build no-code tools for creating DEX, DAO, Wallet, Farming, Lottery and NFT marketplace at your own domain. 
@@ -231,7 +232,7 @@ https://discord.gg/VwKEmHEgVN  - Join Discord
 https://dash.onout.org/ - Join mailing list
 https://twitter.com/onout_org - Follow us on Twitter
 ```
-{таймкоды} заменить на таймкоды вида 
+Replace {timecodes} with timecodes of the following form: 
 ```
 0:25 connect wallet and switch to correct network
 0:30 and attach new domain
