@@ -69,7 +69,7 @@ Here's an example of deployment through **Web3js**:
 Smart contract setup is unique for each contract. See smart contract documentation for setup details.
 
 Smart contract setup examples:
-- [aave v2](#)
+- [aave v2 (soon)](#)  
 
 ## Where do I get a logo to replace the original one?
 
@@ -127,13 +127,13 @@ See our guide to [Blockchain storage](./storage.md#blockchain-storage) for instr
 
 0. Use [name generator](https://namelix.com) to generate a logo
 0. Create a cover image sized **744 х 460 px**
-0. Add a new object to associative array `PRODUCTS` with **product id** for a `key`.
+0. Add a new object to associative array `PRODUCTS` ([here]([here](https://github.com/noxonsu/dash.onout.org/blob/0b4a964ac91ae7d19670cbe6953dbb796e3b666a/src/constants/index.ts#L171))) with **product id** for a `key`. 
 0. Add your product to presale section on dash.onout.org, set product `status` to `development` (or `ready` if the product is finished).
 0. Append a string `new` to array `labels` to display **“NEW”** badge for this product.
 
 ## How do I make a landing page for the release?
 
-Make a pull request (see [example](#)):
+Make a pull request [example](https://github.com/noxonsu/tools.onout.org/pull/56):
 
 0. Use the existing [landing page](https://github.com/noxonsu/tools.onout.org/tree/main/lenda).
 0. Check out our notes on [SEO optimization](#how-do-i-optimize-landing-page-seo).
@@ -165,7 +165,7 @@ The release **goal** is to demonstrate the capability of admin interface on exam
 The **objective** is to record a video highlighting admin functionality and forms of income generation.<br/>
 Follow this pattern to **name your video**: `How to create a DEX on your own domain without coding skills. { project name } fork (copy) tutorial.`
 
-Feel free to check out our [release video example](#).
+Feel free to check out our [release video example](https://www.youtube.com/watch?v=NBhfaBb3EKE&feature=youtu.be).
 
 [Publish the video](#how-do-i-upload-a-video-to-youtube) on team channel.
 
@@ -206,7 +206,7 @@ In order to get the most from the service for free:
 
 ## How do I upload a video to Youtube?
 
-Videos must be uploaded to the team's [youtube channel](https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw).
+Videos must be uploaded to the team's [youtube channel](https://www.youtube.com/channel/UCEu5-QDPFCxKm9z4BAYQSJw). 
 
 0. You need a **gmail** account with **channel admin** rights. Contact the team to gain access.
 0. Create a new **project playlist** if there isn't one.
