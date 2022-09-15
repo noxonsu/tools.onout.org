@@ -26,9 +26,9 @@
 
 ## 3. Release
 
+0. Make a build (```npm run build```?), then upload it into a separate repository to your personal Github account, then open Serttings -> Github pages ([Help](https://docs.github.com/en/pages/quickstart)) and activate a  domain for accessing this app from browser (now you have an DEMO url)
 0. Make a landing page and place it under **tools.onout.org/{ product name }** ([How do I make a landing page for the release?](./faq.md#how-do-i-make-a-landing-page-for-the-release))
 0. Add a product to `tools.onout.org` catalogue ([How do I add a product to the catalogue?](./faq.md#how-do-i-add-a-product-to-the-catalogue))
-0. Make a build, upload it into a separate repository, preferably into [catalogue](https://github.com/appsource). If you don't have access, upload it to your personal Github repository and send a link via [email](mailto:support@onout.org).
 0. Develop an admin interface for the product ([How do I develop admin interface for a product?](./faq.md#admin-integration))
 0. Record a **"How can administrator customize the project"** video ([How do I record a release video?](./faq.md#how-do-i-record-a-release-video))
 0. Make a release publication through team social networks ([How do I provide technical support?](./faq.md#how-do-i-provide-technical-support))
