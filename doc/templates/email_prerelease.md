@@ -21,6 +21,9 @@ This is beta PRESALE version of the product is fully functional on client's side
 3. Go to [https://dash.onout.org/#/products/launchpad](https://dash.onout.org/#/products/launchpad) and click "Buy". 
 4. Download the archive and follow the documentation
 
+## Vitaliy, the developer of this tool says:
+```I did the research of all launchpads and found one which working fine and has open source code. All required functions such as softcap, hardcap, timelock are implemented.```
+
 Your questions are welcomed! Reply to this email or contact us in discord or telegram using links at the footer. 
 
 ## Additional services (email support@onout.org or reply to this email): 
