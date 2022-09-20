@@ -12,6 +12,9 @@ OnOut tools - a marketplace for no-code tools to create crypto projects.
 
 { screenshot }
 
+https://launchpad.onout.org/ - LIVE DEMO
+https://youtu.be/aIXCva-n_sc - VIDEO DEMO
+
 # A tool to launchpads on your own domain is live!
 
 This is beta PRESALE version of the product is fully functional on client's side, but admin dashboard is still in the development. Secure your price today it will rise later
@@ -22,12 +25,15 @@ This is beta PRESALE version of the product is fully functional on client's side
 4. Download the archive and follow the documentation
 
 ## Vitaliy, the developer of this tool says:
-```I did the research of all launchpads and found one which working fine and has open source code. All required functions such as softcap, hardcap, timelock are implemented.```
+"I did the research of all launchpads and found one which working fine and has open source code. All required functions such as softcap, hardcap, timelock are implemented."
 
-Your questions are welcomed! Reply to this email or contact us in discord or telegram using links at the footer. 
+buy now at https://dash.onout.org/
 
-## Additional services (email support@onout.org or reply to this email): 
+# Additional services: 
+- Installation 300$
+- Add another EVM blockchain 1000$ 
+- Reply to this email if you have any questions or contact via telegram bot https://t.me/onoutsupportbot
 
-1. Installation 300$
-2. Add another EVM blockchain 1000$
+Cheers! 🍂
+
 
