@@ -25,7 +25,8 @@ This is beta PRESALE version of the product is fully functional on client's side
 4. Download the archive and follow the documentation
 
 ## Vitaliy, the developer of this tool says:
-"I did the research of all launchpads and found one which working fine and has open source code. All required functions such as softcap, hardcap, timelock are implemented."
+"I've researched all the launchpads and found one that works fine and is open source. Of course, I had to improve UI/UX and smart contract logic to prepare the IDOFactory for prerelease status. At the moment, all necessary functions are implemented, such as soft cap, hard cap, liquidity adding, creating IDO pool fee, token locker, create locker fee, etc.
+The next step is to add an admin panel for your convenience when deploying all the necessary smart contracts, as well as managing them and some UI styles."
 
 buy now at https://dash.onout.org/
 
