@@ -12,7 +12,7 @@ OnOut tools - a marketplace for no-code tools to create crypto projects.
 
 ![screenshot](/images/launchpad_cc.png)
 
-[LIVE DEMO](https://vitaliyshulik.github.io/launchpad)
+[LIVE DEMO](https://launchpad.onout.org/)
 [VIDEO DEMO](https://www.youtube.com/watch?v=jiJBoMpr5tQ&list=PLLtijyRvdwnYDfXZnpaFDe2KNBB4r0FmD&index=1)
 
 # A tool to launchpads on your own domain is live!
