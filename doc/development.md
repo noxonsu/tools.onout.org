@@ -22,6 +22,7 @@
 0. Record a **"How to use the product"** video ([How do I record a pre-release video?](./faq.md#how-do-i-record-a-pre-release-video))
 0. Make a landing page and place it under **tools.onout.org/{ product name }** ([How do I make a landing page for the release?](./faq.md#how-do-i-make-a-landing-page-for-the-release))
 0. Add a product to `tools.onout.org` catalogue ([How do I add a product to the catalogue?](./faq.md#how-do-i-add-a-product-to-the-catalogue))
+0. Add a product to the Codecanyon ([How do I add a product to the Codecanyon?](./faq.md#how-do-i-add-a-product-to-the-codecanyon))
 0. Make a pre-release publication through team social networks ([How do I provide technical support?](./faq.md#how-do-i-provide-technical-support))
 
 ## 3. Release
