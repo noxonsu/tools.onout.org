@@ -157,6 +157,18 @@ The `body` element must contain `h1` and `h2` headers, each `img` element must h
 0. Details should containt a link to [release landing page](#how-do-i-make-a-landing-page-for-the-release).
 0. Preview should containt a link to project demo.
 
+## How do I add a product to the Codecanyon?
+
+0. Use as [example product](https://codecanyon.net/item/farmfactory-ethereum-assets-staking-yield-farming/29987071);
+0. Prepare and provide us following items:
+0. Name & Description;
+0. Thumbnail (JPEG or PNG 80x80px);
+0. Inline Preview Image (590x300 JPEG);
+0. Main File(s) (ZIP - All files for buyers, not including preview images) - provide project sources and build in a zip file;
+0. Preview Screenshots (ZIP file of images (png/jpg) w/ optional text descriptions for display on the site);
+0. Demo URL (Link to a live preview on your own hosting (i.e. https://my-site.com/demo/));
+0. Tags (Maximum of 15 keywords covering features, options and styling. Keywords should all be in lowercase and separated by commas. e.g. slider, gallery, newsletter, wordpress menu);
+
 ## How do I record a release video?
 
 See our instructions on [recording a video](#how-do-i-record-a-video).
