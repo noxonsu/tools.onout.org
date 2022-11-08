@@ -1,3 +1,3 @@
-# tools.onout.org
-https://tools.onout.org
-
+# DEPRECATED!! 
+moved to https://github.com/noxonsu/onout.org 
+https://onout.org/
